@@ -5,96 +5,146 @@
 
 
 @section('content')
-       <!-- start contact-pg-section -->
-       <br><br> <br><br> <br><br> <br><br> 
-        <section class="contact-pg-section section-padding">
+
+    <div class="slider bg-navy-blue bg-scroll pos-rel breadcrumbs-page">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/"><i class="icofont-home"></i></a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                </ol>
+            </nav>
+
+            <h1>Contact Us</h1>
+            <div class="breadcrumbs-description">
+                Molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto.
+            </div>
+        </div>
+    </div>
+
+    <main id="body-content">
+
+
+        <!-- Contact Details Start -->
+        <section class="wide-tb-80 contact-full-shadow">
             <div class="container">
-                <div class="row">
-                    <div class="col col-lg-5 col-md-6 col-sm-8">
-                        <div class="section-title">
-                            <span>Contact With Us</span>
-                            <h2>You can contact with us <span>if you have any query</span></h2>
+
+                @if(Session::has('success'))
+                    <div class="alert alert-info" role="alert">
+                        {{ Session::get('success') }}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                @endif
+
+                @if(Session::has('failed'))
+                    <div class="alert alert-danger" role="alert">
+                        {{ Session::get('failed') }}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                @endif
+
+
+                <div class="contact-map-bg">
+                    <img src="images/map-bg.png" alt="">
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-md-5 col-sm-12 col-lg-5 wow fadeInRight" data-wow-duration="0" data-wow-delay="0s"
+                         style="visibility: visible; animation-delay: 0s; animation-name: fadeInRight;">
+                        <div class="contact-detail-shadow">
+                            <h4>Germany</h4>
+                            <div class="d-flex align-items-start items">
+                                <i class="icofont-google-map"></i> <span>Envato Pty Ltd, 13/2 Elizabeth
+St Melbourne VIC 3000, Australia</span>
+                            </div>
+                            <div class="d-flex align-items-start items">
+                                <i class="icofont-phone"></i> <span>+1 (408) 786 - 5117</span>
+                            </div>
+                            <div class="text-nowrap d-flex align-items-start items">
+                                <i class="icofont-email"></i> <a href="#">germany@logzee.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-12 col-lg-7 wow fadeInLeft" data-wow-duration="0" data-wow-delay="0s"
+                         style="visibility: visible; animation-delay: 0s; animation-name: fadeInLeft;">
+                        <div class="contact-detail-shadow">
+                            <h1 class="heading-main mb-4">
+                                Get in touch
+                            </h1>
+
+                            <form action="/email" method="post" id="contactusForm" novalidate="novalidate"
+                                  class="col rounded-field">
+                                <div class="form-row mb-4">
+                                    <div class="col">
+                                        <input type="text" name="name" id="name" class="form-control"
+                                               placeholder="Your Name">
+                                        <input type="hidden" name="_token" value="{{{ csrf_token() }}}"/>
+                                    </div>
+
+                                </div>
+                                <div class="form-row mb-4">
+
+                                    <div class="col">
+                                        <input type="text" name="phone" id="phone" class="form-control"
+                                               placeholder="Phone">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" name="email" id="email" class="form-control"
+                                               placeholder="Email">
+                                    </div>
+                                </div>
+
+                                <div class="form-row mb-4">
+                                    <div class="col">
+                                        <textarea rows="7" name="message" id="cment" placeholder="Message"
+                                                  class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-row text-center">
+
+                                    <button id="contactForm" type="submit"
+                                            class="form-btn mx-auto btn-theme bg-orange">Submit Now <i
+                                                class="icofont-rounded-right"></i></button>
+                                </div>
+                            </form>
+
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col col-md-7">
-                        <form method="post" class="contact-validation-active" id="contact-form-main">
-                            <div>
-                                <input type="text" class="form-control" name="name" id="name" placeholder="Name*">
-                            </div>
-                            <div>
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Email*">
-                            </div>
-                            <div>
-                                <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone*">
-                            </div>
-                            <div>
-                                <select name="subject" class="form-control">
-                                    <option disabled="disabled" selected>Contact subject</option>
-                                    <option>Subject 1</option>
-                                    <option>Subject 2</option>
-                                    <option>Subject 3</option>
-                                </select>
-                            </div>
-                            <div class="fullwidth">
-                                <textarea class="form-control" name="note"  id="note" placeholder="Case Description..."></textarea>
-                            </div>
-                            <div class="submit-area">
-                                <button type="submit" class="theme-btn">Submit Now</button>
-                                <div id="loader">
-                                    <i class="ti-reload"></i>
-                                </div>
-                            </div>
-                            <div class="clearfix error-handling-messages">
-                                <div id="success">Thank you</div>
-                                <div id="error"> Error occurred while sending email. Please try again later. </div>
-                            </div>
-                        </form>
-                    </div>  
-
-                    <div class="col col-md-5">
-                        <div class="office-info">
-                            <div>
-                                <h3>Dhaka Office</h3>
-                                <ul>
-                                    <li><i class="ti-location-pin"></i> House no 368, DOHS, Mohakhali</li>
-                                    <li><i class="ti-mobile"></i>  Phone:  ++88...</li>
-                                    <li><i class="ti-email"></i> Email: info@germanchemiclasltd.com</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h3> Office</h3>
-                                <ul>
-                                    <li><i class="ti-location-pin"></i></li>
-                                    <li><i class="ti-mobile"></i> Phone:  ++88...</li>
-                                    <li><i class="ti-email"></i> Email: info@germanchemiclasltd.com</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h3>Office</h3>
-                                <ul>
-                                    <li><i class="ti-location-pin"></i> </li>
-                                    <li><i class="ti-mobile"></i> </li>
-                                    <li><i class="ti-email"></i> </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>                  
-                </div>
-            </div> <!-- end container -->
-        </section>
-        <!-- end contact-pg-section -->
-
-
-        <!--  start contact-map -->
-        <section class="contact-map-section">
-            <h2 class="hidden">Contact map</h2>
-            <div class="contact-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.9147703055!2d-74.11976314309273!3d40.69740344223377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbd!4v1547528325671" allowfullscreen></iframe>
             </div>
         </section>
-        <!-- end contact-map -->
+        <!-- Contact Details End -->
 
+
+        <!-- Google Map Start -->
+        <section class="map-bg">
+
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="100%" height="400" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=House%20no%20168%2C%20Road%2023%2CDOHS%2CMohakhali&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <a href="https://www.embedgooglemap.net/blog/nordvpn-coupon-code/">buy nord vpn</a></div>
+                <style>.mapouter {
+                        position: relative;
+                        text-align: right;
+                        height: 400px;
+                        width: 100%;
+                    }
+
+                    .gmap_canvas {
+                        overflow: hidden;
+                        background: none !important;
+                        height: 400px;
+                        width: 100%
+                    }</style>
+            </div>
+
+        </section>
+        <!-- Google Map Start -->
+    </main>
 
 @endsection

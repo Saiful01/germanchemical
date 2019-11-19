@@ -195,7 +195,7 @@ Phone: 01717849968
                     <a href="#">Privacy Policy</a> <span>|</span> <a href="#">CONTACT</a> <span>|</span> <a href="#">FAQS</a>
                 </div>
                 <div class="col-sm-12 col-md-6 text-md-right text-center">
-                    Crapted by <a href="#" rel="nofollow">Pixon Lab</a> © 2019 All Rights Reserved
+                    Crafted by <a href="http://www.pixonlab.com" rel="nofollow">Pixon Lab</a> © 2019 All Rights Reserved
                 </div>
             </div>
         </div>
@@ -240,7 +240,7 @@ Phone: 01717849968
 <script src="/asset/js/popper.min.js"></script>
 <script src="/asset/js/bootstrap.min.js"></script>
 <script src="/asset/js/bootstrap-dropdownhover.min.js"></script>
-<script src="/asset/js/fontawesome-all.js"></script>
+{{--<script src="/asset/js/fontawesome-all.js"></script>--}}
 <script src="/asset/js/owl.carousel.min.js"></script>
 <script src="/asset/twitter/jquery.tweet.js"></script>
 <script src="/asset/js/jflickrfeed.min.js"></script>
