@@ -252,7 +252,7 @@ Phone: 01717849968
 <script src="/asset/js/wow.min.js"></script>
 
 <!-- JQuery Map Plugin -->
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+{{--<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>--}}
 <script type="text/javascript" src="/asset/js/jquery.gmap.min.js"></script>
 
 
