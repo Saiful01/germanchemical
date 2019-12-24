@@ -67,21 +67,24 @@ Phone: 01717849968
           </div>
           <div class="col-md-auto">
 
-            <span class="mr-3"><i class="icofont-ui-touch-phone"></i> +88</span>
+            <span class="mr-3"><i class="icofont-ui-touch-phone"></i> 008827790248</span>
 
             <span class="mr-3"><i class="icofont-ui-email"></i> Email Us</span>
             <!-- Topbar Language Dropdown Start -->
             <div class="dropdown d-inline-flex lang-toggle shadow-sm">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-hover="dropdown" data-animations="slideInUp slideInUp slideInUp slideInUp">
-                <img src="/asset/images/us.svg" alt="" class="dropdown-item-icon"> 
-                <span class="d-inline-block d-lg-none">US</span>
-                <span class="d-none d-lg-inline-block">Enlish</span> <i class="icofont-rounded-down"></i>
-              </a>
-              <div class="dropdown-menu dropdownhover-bottom dropdown-menu-right" role="menu">
-                <a class="dropdown-item active" href="#">BN</a>
-                
-              </div>
-            </div>            
+                        <a href="#" class="dropdown-toggle btn" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false" data-hover="dropdown"
+                           data-animations="slideInUp slideInUp slideInUp slideInUp">
+                            <img src="/asset/images/us.svg" alt="" class="dropdown-item-icon">
+                            <span class="d-inline-block d-lg-none">US</span>
+                            <span class="d-none d-lg-inline-block">English</span> <i
+                                    class="icofont-rounded-down"></i>
+                        </a>
+                        <div class="dropdown-menu dropdownhover-bottom dropdown-menu-right" role="menu">
+                            <a class="dropdown-item active" href="#">English</a>
+                            <a class="dropdown-item" href="#">Bangla</a>
+                        </div>
+                        </div>
             <!-- Topbar Language Dropdown End -->          
           </div>
         </div>
@@ -92,8 +95,8 @@ Phone: 01717849968
     <nav class="navbar navbar-expand-lg bg-transparent">
         <div class="container text-nowrap bdr-nav px-0">
             <div class="d-flex mr-auto">
-                <a class="navbar-brand rounded-bottom light-bg" href="index.html">
-                    <img src="/asset/images/logo_white.png" alt="">
+                <a class="navbar-brand rounded-bottom light-bg" href="/">
+                    <img src="/asset/images/logo_footer.png" alt="">
                 </a>
             </div>
 
@@ -119,26 +122,20 @@ Phone: 01717849968
                          <a class="nav-link" href="/about">About Us</a>
                      </li>-->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle-mob" href="/company" data-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle-mob" href="/" data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">Company <i class="icofont-rounded-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/company">Company Introduction</a></li>
-                            <li><a class="dropdown-item" href="typography.html">Message From Chairman</a></li>
-                            <li><a class="dropdown-item" href="typography.html">RRD</a></li>
-                            <li><a class="dropdown-item" href="typography.html">PR</a></li>
+                            <li><a class="dropdown-item" href="/companyintro">Company Introduction</a></li>
+                            <li><a class="dropdown-item" href="/MFChairman">Message From Chairman</a></li>
+                            <li><a class="dropdown-item" href="/prd">RRD</a></li>
+                            <li><a class="dropdown-item" href="/pr">PR</a></li>
                         </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/products">Products</a>
                     </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle-mob" href="/company" data-toggle="dropdown"
-                           aria-haspopup="true" aria-expanded="false">Products <i class="icofont-rounded-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="shortcodes-element.html">Company Introduction</a></li>
-                            <li><a class="dropdown-item" href="typography.html">Message From Chairman</a></li>
-                            <li><a class="dropdown-item" href="typography.html">RRD</a></li>
-                            <li><a class="dropdown-item" href="typography.html">PR</a></li>
-                        </ul>
-                    </li>
+                  
                     <li class="nav-item">
                         <a class="nav-link" href="/media">Media</a>
                     </li>
@@ -146,12 +143,12 @@ Phone: 01717849968
                         <a class="nav-link dropdown-toggle-mob" href="/career" data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">Career <i class="icofont-rounded-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="project-grid.html">Desired Qualities of Employee Grid</a>
+                            <li><a class="dropdown-item" href="/desired">Desired Qualities of Employee Grid</a>
                             </li>
-                            <li><a class="dropdown-item" href="project-masonary.html">HR Policy</a></li>
-                            <li><a class="dropdown-item" href="project-masonary.html">Recruitment</a></li>
-                            <li><a class="dropdown-item" href="project-masonary.html">Information</a></li>
-                            <li><a class="dropdown-item" href="project-masonary.html">Apply</a></li>
+                            <li><a class="dropdown-item" href="/hr">HR Policy</a></li>
+                            <li><a class="dropdown-item" href="/recruitment">Recruitment</a></li>
+                            <li><a class="dropdown-item" href="/information">Information</a></li>
+                            <li><a class="dropdown-item" href="/apply">Apply</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -244,7 +241,6 @@ Phone: 01717849968
 <script src="/asset/js/wow.min.js"></script>
 
 <!-- JQuery Map Plugin -->
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript" src="/asset/js/jquery.gmap.min.js"></script>
 
 

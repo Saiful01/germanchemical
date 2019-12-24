@@ -29,7 +29,7 @@
                             data-slicey_shadow="0px 0px 50px 0px transparent"
                     >
                         <!-- MAIN IMAGE -->
-                        <img src="/asset/images/banner_slider_4.jpg" alt=""
+                        <img src="/images/sl1.jpg" alt=""
                              data-bgposition="center center"
                              data-kenburns="on"
                              data-duration="7000"
@@ -70,7 +70,7 @@
                              data-paddingright="[0,0,0,0]"
                              data-paddingbottom="[0,0,0,0]"
                              data-paddingleft="[0,0,0,0]"
-                        >We Are LogZee
+                        >We Are German Chemical LTD
                         </div>
 
                         <!-- LAYER NR. 11 -->
@@ -125,9 +125,7 @@
                              data-fontsize="['16','16','16','13']"
                              data-lineheight="['30','30','30','20']"
 
-                        >We deliver your products on time with pure safety. Sed ut perspiciatis unde<br> omnis iste
-                            natus
-                            error sit voluptatem accusantium doloremque laudantium,
+                        >“German Chemicals Limited”, is a 100% export oriented textile chemicals manufacturer .
                         </div>
 
                         <!-- LAYER NR. 12 -->
@@ -167,7 +165,7 @@
                         data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5=""
                         data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                         <!-- MAIN IMAGE -->
-                        <img src="/asset/images/banner_slider_3.jpg" alt="" data-bgposition="center center"
+                        <img src="/images/sl2.jpg" alt="" data-bgposliderition="center center"
                              data-bgfit="cover"
                              data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
                         <!-- LAYERS -->
@@ -194,7 +192,7 @@
                              data-paddingright="[0,0,0,0]"
                              data-paddingbottom="[0,0,0,0]"
                              data-paddingleft="[0,0,0,0]"
-                        >We Are LogZee
+                        >We Are German Chemical LTD
                         </div>
 
                         <!-- LAYER NR. 11 -->
@@ -249,9 +247,7 @@
                              data-fontsize="['16','16','16','13']"
                              data-lineheight="['30','30','30','20']"
 
-                        >We deliver your products on time with pure safety. Sed ut perspiciatis unde<br> omnis iste
-                            natus
-                            error sit voluptatem accusantium doloremque laudantium,
+                        >“German Chemicals Limited”, is a 100% export oriented textile chemicals manufacturer .
                         </div>
 
                         <!-- LAYER NR. 12 -->

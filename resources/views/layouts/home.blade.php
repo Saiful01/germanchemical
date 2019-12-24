@@ -69,8 +69,8 @@ Phone: 01717849968
                         <a href="#">info@germanchemicalsltd.com</a>
                     </div>
                     <div class="top-text">
-                        <small class="txt-sky-blue">Phone Number</small>
-                        +88 (0) 202 0000 001
+                        <small class="txt-sky-blue">Call</small>
+                         008827790248
                     </div>
                 </div>
                 <div class="col-md-auto">
@@ -129,36 +129,31 @@ Phone: 01717849968
                         <a class="nav-link dropdown-toggle-mob" href="/company" data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">Company <i class="icofont-rounded-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/company">Company Introduction</a></li>
-                            <li><a class="dropdown-item" href="typography.html">Message From Chairman</a></li>
-                            <li><a class="dropdown-item" href="typography.html">RRD</a></li>
-                            <li><a class="dropdown-item" href="typography.html">PR</a></li>
+                            <li><a class="dropdown-item" href="/companyintro">Company Introduction</a></li>
+                            <li><a class="dropdown-item" href="/MFChairman">Message From Chairman</a></li>
+                            <li><a class="dropdown-item" href="/prd">RRD</a></li>
+                            <li><a class="dropdown-item" href="/pr">PR</a></li>
                         </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/products">Products</a>
                     </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle-mob" href="/company" data-toggle="dropdown"
-                           aria-haspopup="true" aria-expanded="false">Products <i class="icofont-rounded-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="shortcodes-element.html">Company Introduction</a></li>
-                            <li><a class="dropdown-item" href="typography.html">Message From Chairman</a></li>
-                            <li><a class="dropdown-item" href="typography.html">RRD</a></li>
-                            <li><a class="dropdown-item" href="typography.html">PR</a></li>
-                        </ul>
-                    </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="/media">Media</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle-mob" href="/career" data-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle-mob" href="/" data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">Career <i class="icofont-rounded-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="project-grid.html">Desired Qualities of Employee Grid</a>
+                            <li><a class="dropdown-item" href="/desired">Desired Qualities of Employee Grid</a>
                             </li>
-                            <li><a class="dropdown-item" href="project-masonary.html">HR Policy</a></li>
-                            <li><a class="dropdown-item" href="project-masonary.html">Recruitment</a></li>
-                            <li><a class="dropdown-item" href="project-masonary.html">Information</a></li>
-                            <li><a class="dropdown-item" href="project-masonary.html">Apply</a></li>
+                            <li><a class="dropdown-item" href="/hr">HR Policy</a></li>
+                            <li><a class="dropdown-item" href="/recruitment">Recruitment</a></li>
+                            <li><a class="dropdown-item" href="/information">Information</a></li>
+                            <li><a class="dropdown-item" href="/apply">Apply</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">

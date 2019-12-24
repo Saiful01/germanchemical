@@ -15,20 +15,52 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/companyintro', function () {
+    return view('pages.company.companyintro');
+});
+Route::get('/MFChairman', function () {
+    return view('pages.company.MFChairman');
+});
+    
+Route::get('/prd', function () {
+    return view('pages.company.prd');
+});
+Route::get('/pr', function () {
+    return view('pages.company.pr');
+});
 Route::get('/contact', function () {
     return view('pages.contact');
 });
-Route::get('/company', function () {
-    return view('pages.company');
+
+Route::get('/desired', function () {
+    return view('pages.career.desired');
 });
-Route::get('/career', function () {
-    return view('pages.career');
+Route::get('/hr', function () {
+    return view('pages.career.hr');
 });
+Route::get('/recruitment', function () {
+    return view('pages.career.recruitment');
+});
+Route::get('/information', function () {
+    return view('pages.career.information');
+});
+
+
+
+Route::get('/apply', 'Controller@apply');
+Route::get('/job/job-detail/{id}', 'Controller@jobDetail');
+Route::get('/job/job-apply/{id}', 'Controller@jobApply');
+Route::post('/applicant/job-apply', 'Controller@jobApplicantInsert');
+
+
+
+
 Route::get('/media', function () {
     return view('pages.media');
 });
 Route::get('/products', function () {
-    return view('pages.products');
+    $result = \App\product::get();
+    return view('pages.products.products')->with('result', $result);
 });
 Route::get('/webmails', function () {
     return view('pages.webmails');
@@ -49,8 +81,53 @@ Route::post('/email', 'Controller@email');
 
 
 
-//Admin Section
+//Admin Section slider
 Route::get('/slider/create', 'SliderController@create');
 Route::post('/slider/store', 'SliderController@store');
 Route::get('/slider/view', 'SliderController@show');
+Route::get('/slider/edit/{id}', 'SliderController@edit');
+
+Route::post('/slider/update', 'SliderController@update');
+Route::get('/slider/delete/{id}', 'SliderController@destroy');
+
+
+
+//Admin Section job
+Route::get('/job/create', 'JobController@create');
+Route::post('/job/store', 'JobController@store');
+Route::get('/job/view', 'JobController@show');
+Route::get('/job/edit/{id}', 'JobController@edit');
+Route::get('/job/applicant/{id}', 'JobController@applicant');
+Route::post('/job/update', 'JobController@update');
+Route::get('/job/delete/{id}', 'JobController@destroy');
+
+
+//Admin section Apllicant table
+Route::get('/applicant/create', 'ApplicantTableController@create');
+Route::post('/applicant/store', 'ApplicantTableController@store');
+Route::get('/applicant/view', 'ApplicantTableController@show');
+
+
+//admin JobApplicant table
+Route::get('/jobapplicant/create', 'JobApplicantController@create');
+Route::get('/jobapplicant/show', 'JobApplicantController@show');
+
+//admin section Employee manage...
+Route::get('/employee/create', 'EmployeeController@create');
+Route::post('/employee/store', 'EmployeeController@store');
+Route::get('/employee/view', 'EmployeeController@show');
+Route::get('/employee/edit/{id}', 'EmployeeController@edit');
+
+Route::post('/employee/update', 'EmployeeController@update');
+Route::get('/employee/delete/{id}', 'EmployeeController@destroy');
+//admin section product manage...
+Route::get('/product/create', 'ProductController@create');
+Route::post('/product/store', 'ProductController@store');
+Route::get('/product/view', 'ProductController@show');
+Route::get('/product/edit/{id}', 'ProductController@edit');
+Route::get('/pages/products/details/{id}', 'ProductController@details');
+
+Route::post('/product/update', 'ProductController@update');
+Route::get('/product/delete/{id}', 'ProductController@destroy');
+
 

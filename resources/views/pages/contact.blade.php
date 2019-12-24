@@ -55,16 +55,15 @@
                     <div class="col-md-5 col-sm-12 col-lg-5 wow fadeInRight" data-wow-duration="0" data-wow-delay="0s"
                          style="visibility: visible; animation-delay: 0s; animation-name: fadeInRight;">
                         <div class="contact-detail-shadow">
-                            <h4>Germany</h4>
+                            <h4>Dhaka</h4>
                             <div class="d-flex align-items-start items">
-                                <i class="icofont-google-map"></i> <span>Envato Pty Ltd, 13/2 Elizabeth
-St Melbourne VIC 3000, Australia</span>
+                                <i class="icofont-google-map"></i> <span>House no 168, Road 23,DOHS,Mohakhali</span>
                             </div>
                             <div class="d-flex align-items-start items">
-                                <i class="icofont-phone"></i> <span>+1 (408) 786 - 5117</span>
+                                <i class="icofont-phone"></i> <span>+88</span>
                             </div>
                             <div class="text-nowrap d-flex align-items-start items">
-                                <i class="icofont-email"></i> <a href="#">germany@logzee.com</a>
+                                <i class="icofont-email"></i> <a href="#">geremanchemicalltd.com</a>
                             </div>
                         </div>
                     </div>
