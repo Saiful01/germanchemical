@@ -11,8 +11,10 @@
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
+    $result = \App\Slider::get();
+    return view('welcome')->with('result',$result);
 });
 
 Route::get('/companyintro', function () {
@@ -66,14 +68,17 @@ Route::get('/webmails', function () {
     return view('pages.webmails');
 });
 
-
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//admin login strat
+Route::get('/admin/login', 'LoginController@login');
+Route::post('/admin/login/check', 'LoginController@loginCheck');
 
-Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/admin/logout', 'LoginController@logout');
+
+
+//end admin login
 
 //Email
 Route::post('/email', 'Controller@email');
@@ -100,34 +105,46 @@ Route::get('/job/edit/{id}', 'JobController@edit');
 Route::get('/job/applicant/{id}', 'JobController@applicant');
 Route::post('/job/update', 'JobController@update');
 Route::get('/job/delete/{id}', 'JobController@destroy');
+Route::get('/jobapplicant/show/{id}', 'JobController@applicant');
+
+
 
 
 //Admin section Apllicant table
 Route::get('/applicant/create', 'ApplicantTableController@create');
 Route::post('/applicant/store', 'ApplicantTableController@store');
 Route::get('/applicant/view', 'ApplicantTableController@show');
+Route::get('/applicant/delete/{id}', 'ApplicantTableController@destroy');
+
 
 
 //admin JobApplicant table
 Route::get('/jobapplicant/create', 'JobApplicantController@create');
 Route::get('/jobapplicant/show', 'JobApplicantController@show');
+Route::get('/jobapplicant/delete/{id}', 'JobApplicantController@destroy');
 
 //admin section Employee manage...
 Route::get('/employee/create', 'EmployeeController@create');
 Route::post('/employee/store', 'EmployeeController@store');
 Route::get('/employee/view', 'EmployeeController@show');
 Route::get('/employee/edit/{id}', 'EmployeeController@edit');
-
 Route::post('/employee/update', 'EmployeeController@update');
 Route::get('/employee/delete/{id}', 'EmployeeController@destroy');
+
 //admin section product manage...
 Route::get('/product/create', 'ProductController@create');
 Route::post('/product/store', 'ProductController@store');
 Route::get('/product/view', 'ProductController@show');
 Route::get('/product/edit/{id}', 'ProductController@edit');
 Route::get('/pages/products/details/{id}', 'ProductController@details');
-
 Route::post('/product/update', 'ProductController@update');
 Route::get('/product/delete/{id}', 'ProductController@destroy');
+
+// admin section contac list
+Route::get('/contac/create', 'ContacController@create');
+Route::post('/contac/store', 'ContacController@store');
+Route::get('/contac/view', 'ContacController@show');
+Route::get('/contac/delete/{id}', 'ContacController@destroy');
+
 
 

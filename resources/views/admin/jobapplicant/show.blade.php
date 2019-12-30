@@ -2,6 +2,9 @@
 
 @section('content')
 <div class="card">
+     <div class="card-header">
+     <h1 class="text-center text-primary">Job Applicant List</h1>
+     </div>
     <div class="card-body">
     
     @if(Session::has('success'))
@@ -12,7 +15,7 @@
 <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('failed') }}</p>
 @endif
 
-<table class="table table-borderd">
+<table class="table table-bordered">
     <thead>
         <tr>
            <th>Job Id</th>
@@ -22,6 +25,7 @@
            <th>Applicant Max Education</th>
            <th>Applicant phone</th>
            <th>Applicant password</th>
+           <th>Delete</th>
            
 
         </tr>
@@ -36,6 +40,8 @@
 <td>{{$res->app_max_edu}} </td>
 <td>{{$res->app_phone}} </td>
 <td>{{$res->app_password}} </td>
+<td><a class="btn btn-danger" href="/jobapplicant/delete/{{$res->id}}">Delete</a></td>
+
 
 </tr>
 

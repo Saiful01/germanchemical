@@ -99,8 +99,8 @@ Phone: 01717849968
     <nav class="navbar navbar-expand-lg bg-transparent">
         <div class="container text-nowrap bdr-nav px-0">
             <div class="d-flex mr-auto">
-                <a class="navbar-brand rounded-bottom light-bg" href="index.html">
-                    <img src="/asset/images/logo_white.png" alt="">
+                <a class="navbar-brand rounded-bottom light-bg text-white" href="/"> 
+                 <img src="https://germanchemicalslimited.net/wp-content/themes/gcl/images/logo.png" alt=" GERMAN CHEMICAl"> 
                 </a>
             </div>
 
@@ -185,9 +185,10 @@ Phone: 01717849968
 
     <div class="copyright-wrap bg-navy-blue wide-tb-30">
         <div class="container">
+        
             <div class="row text-md-left text-center">
                 <div class="col-sm-12 col-md-6 copyright-links">
-                    <a href="#">Privacy Policy</a> <span>|</span> <a href="#">CONTACT</a> <span>|</span> <a href="#">FAQS</a>
+                    <a href="#">Privacy Policy</a> <span>|</span> <a href="/contact">CONTACT</a> <span>|</span> <a href="#">FAQS</a>
                 </div>
                 <div class="col-sm-12 col-md-6 text-md-right text-center">
                     Crafted by <a href="http://www.pixonlab.com" rel="nofollow">Pixon Lab</a> © 2019 All Rights Reserved

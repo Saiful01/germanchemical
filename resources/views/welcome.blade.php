@@ -14,6 +14,8 @@
             <!-- START REVOLUTION SLIDER 5.4.1 fullwidth mode -->
             <div id="rev_slider_1078_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.1">
                 <ul>
+                @foreach($result as $res)
+
                     <li
                             data-index="rs-82"
                             data-transition="fade"
@@ -29,7 +31,7 @@
                             data-slicey_shadow="0px 0px 50px 0px transparent"
                     >
                         <!-- MAIN IMAGE -->
-                        <img src="/images/sl1.jpg" alt=""
+                        <img src="/images/slider/{{$res->slider_image}}" alt=""
                              data-bgposition="center center"
                              data-kenburns="on"
                              data-duration="7000"
@@ -70,7 +72,7 @@
                              data-paddingright="[0,0,0,0]"
                              data-paddingbottom="[0,0,0,0]"
                              data-paddingleft="[0,0,0,0]"
-                        >We Are German Chemical LTD
+                        >{{$res->slider_name}}
                         </div>
 
                         <!-- LAYER NR. 11 -->
@@ -98,7 +100,7 @@
                              data-fontsize="['28','28','28','28']"
                              data-lineheight="['34','34','34','50']"
 
-                        >From Pickup to Destination
+                        >{{$res->slider_title}}
                         </div>
 
                         <!-- LAYER NR. 12 -->
@@ -125,7 +127,8 @@
                              data-fontsize="['16','16','16','13']"
                              data-lineheight="['30','30','30','20']"
 
-                        >“German Chemicals Limited”, is a 100% export oriented textile chemicals manufacturer .
+                        >{{$res->slider_sub_title}}
+                       
                         </div>
 
                         <!-- LAYER NR. 12 -->
@@ -155,128 +158,8 @@
 
                         >Learn More <i class="icofont-rounded-right"></i></div>
                     </li>
+                    @endforeach
                     <!-- SLIDE  -->
-                    <li data-index="rs-3045" data-transition="zoomout" data-slotamount="default" data-hideafterloop="0"
-                        data-hideslideonmobile="off" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut"
-                        data-masterspeed="2000" data-thumb="rev-slider/assets/images/datcolor-100x50.jpg"
-                        data-rotate="0"
-                        data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7"
-                        data-saveperformance="off"
-                        data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5=""
-                        data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                        <!-- MAIN IMAGE -->
-                        <img src="/images/sl2.jpg" alt="" data-bgposliderition="center center"
-                             data-bgfit="cover"
-                             data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-                        <!-- LAYERS -->
-
-
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption NotGeneric-Title tp-resizeme"
-                             id="slide-3-layer-2"
-                             data-blendmode=”color-dodge“
-                             data-x="['center','center','center','center']"
-                             data-hoffset="['0','0','0','0']"
-                             data-y="['middle','middle','middle','middle']"
-                             data-voffset="['-70','-70','-70','-70']"
-                             data-fontsize="['70','60','60','55']"
-                             data-lineheight="['80','70','70','40']"
-                             data-width="none"
-                             data-height="none"
-                             data-whitespace="nowrap"
-                             data-type="text"
-                             data-responsive_offset="on"
-                             data-frames='[{"delay":200,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                             data-textAlign="['inherit','inherit','inherit','inherit']"
-                             data-paddingtop="[0,0,0,0]"
-                             data-paddingright="[0,0,0,0]"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,0]"
-                        >We Are German Chemical LTD
-                        </div>
-
-                        <!-- LAYER NR. 11 -->
-                        <div class="tp-caption medium_light_white tp-resizeme"
-                             id="slide-82-layer-3"
-
-                             data-blendmode=”color-dodge“
-                             data-x="['center','center','center','center']"
-                             data-hoffset="['0','0','0','0']"
-                             data-y="['middle','middle','middle','middle']"
-                             data-voffset="['-10','-10','-10','-10']"
-                             data-width="none"
-                             data-height="none"
-                             data-whitespace="nowrap"
-                             data-type="text"
-                             data-responsive_offset="on"
-                             data-frames='[{"delay":500,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                             data-textAlign="['inherit','inherit','inherit','inherit']"
-
-                             data-paddingtop="[0,0,0,0]"
-                             data-paddingright="[0,0,0,0]"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,0]"
-
-                             data-fontsize="['28','28','28','28']"
-                             data-lineheight="['34','34','34','50']"
-
-                        >From Pickup to Destination
-                        </div>
-
-                        <!-- LAYER NR. 12 -->
-                        <div class="tp-caption tp-resizeme small_light_white "
-                             id="slide-82-layer-7"
-                             data-x="['center','center','center','center']"
-                             data-hoffset="['0','0','0','0']"
-                             data-y="['middle','middle','middle','middle']"
-                             data-voffset="['60','60','60','60']"
-                             data-width="none"
-                             data-height="none"
-                             data-whitespace="nowrap"
-
-                             data-type="text"
-                             data-responsive_offset="on"
-
-                             data-frames='[{"delay":600,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                             data-textAlign="['inherit','inherit','inherit','inherit']"
-                             data-paddingtop="[0,0,0,0]"
-                             data-paddingright="[0,0,0,0]"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,0]"
-
-                             data-fontsize="['16','16','16','13']"
-                             data-lineheight="['30','30','30','20']"
-
-                        >“German Chemicals Limited”, is a 100% export oriented textile chemicals manufacturer .
-                        </div>
-
-                        <!-- LAYER NR. 12 -->
-                        <div class="tp-caption tp-resizeme btn-theme bg-navy-blue rev-btn"
-                             id="slide-82-layer-6"
-                             data-x="['center','center','center','center']"
-                             data-hoffset="['0','0','0','0']"
-                             data-y="['middle','middle','middle','middle']"
-                             data-voffset="['140','140','140','140']"
-                             data-width="none"
-                             data-height="none"
-                             data-whitespace="nowrap"
-
-                             data-type="text"
-                             data-responsive_offset="on"
-
-                             data-frames='[{"delay":750,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                             data-textAlign="['inherit','inherit','inherit','inherit']"
-
-                             data-paddingtop="[0,0,0,0]"
-                             data-paddingright="[30,30,30,30]"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[30,30,30,30]"
-
-                             data-fontsize="['14','14','14','14']"
-                             data-lineheight="['16','16','16','16']"
-
-                        >Learn More <i class="icofont-rounded-right"></i></div>
-                    </li>
                 </ul>
                 <div class="tp-bannertimer tp-bottom"
                      style="height: 7px; background-color: rgba(255, 255, 255, 0.25);"></div>
@@ -291,81 +174,23 @@
         <!-- Journey Style Start -->
         <section class="bg-white wide-tb-100">
             <div class="container pos-rel">
-                <div class="row">
-                    <div class="col-md-12 col-lg-6">
-                        <p><img src="/asset/images/years_img.png" alt="" class="mb-5"></p>
-                        <p>Having implemented a variety of ecological, economic and social initiatives, the family-owned
-                            company, which has a history going back 500 years, is considered a pioneer in terms of
-                            sustainable business today.</p>
-                        <p>The Corporate Movie of the transport and logistics service provider Globax Logistics. GL not
-                            only
-                            moves goods and data, but also people who are connected to the orange network.</p>
+                <div class="row text-center">
+                    <div class="col-md-12 col-lg-12">
+                        <p><img src="/asset/images/edit.png" alt="" class="mb-5"></p>
+                        <p class="para-space"></p><p style="text-align: justify;">Having started a venture 13 years ago, today I am privileged to be a founding member of one of the most competitive chemical company with emphasis on efficiency in operations, reliability for customers and trust on sustainable development.For us, sustainability means aligning economic success with environmental and social responsibility. In the last few years the German Chemicals Limited faced a series of prolonged crises. These crises allowed us to gain invaluable experience and guided us to newer avenues.</p>
+<p style="text-align: justify;">I would like to thank our employees, customers, suppliers and other stakeholders, for their dedication and support. We are committed to improving the efficiencies in our operations and differentiating ourselves in the market-place through customer focussed innovation in product and services, so as to build a stronger and sustainable future for our Company and our associates.</p>
+<p>&nbsp;<br>
+&nbsp;</p>
                         <div class="img-icon mt-4 d-flex align-items-center">
-                            <img src="/asset/images/team/team-1.jpg">
+                            <img src="https://germanchemicalslimited.net/wp-content/uploads/2017/10/Badiul-Alam-Chairman.png">
                             <h3>
-                                John Morise
-                                <span>Founder & CEO</span>
+                                MD B.Alam
+                                <span>Founder & Chairman</span>
                             </h3>
                         </div>
                     </div>
 
-                    <!-- Spacer For Medium -->
-                    <div class="w-100 spacer-50 d-none d-md-block d-lg-none d-sm-none"></div>
-                    <!-- Spacer For Medium -->
-                    <div class="col-md-12 col-lg-6">
-
-                        <div class="row">
-                            <!-- Icon Box 6 -->
-                            <div class="col-12 col-md-6">
-                                <div class="icon-box-6">
-                                    <i class="icofont-box"></i>
-                                    <h3 class="h3-xs txt-blue">Packaging and Storage</h3>
-                                    <p>Praesent pellentesque diam vitae nibh aliquam faucibus.</p>
-                                    <a href="#" class="btn-arrow bg-navy-blue"><i class="icofont-swoosh-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- Icon Box 6 -->
-
-                            <!-- Icon Box 6 -->
-                            <div class="col-12 col-md-6">
-                                <div class="icon-box-6">
-                                    <i class="icofont-safety"></i>
-                                    <h3 class="h3-xs txt-blue">Safety & Quality</h3>
-                                    <p>Praesent pellentesque diam vitae nibh aliquam faucibus.</p>
-                                    <a href="#" class="btn-arrow bg-navy-blue"><i class="icofont-swoosh-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- Icon Box 6 -->
-
-                            <!-- Spacer For Medium -->
-                            <div class="w-100 spacer-50 d-none d-lg-none d-md-block d-lg-block d-sm-none"></div>
-                            <!-- Spacer For Medium -->
-
-                            <!-- Icon Box 6 -->
-                            <div class="col-12 col-md-6">
-                                <div class="icon-box-6">
-                                    <i class="icofont-tree-alt"></i>
-                                    <h3 class="h3-xs txt-blue">Care for Environment</h3>
-                                    <p>Praesent pellentesque diam vitae nibh aliquam faucibus.</p>
-                                    <a href="#" class="btn-arrow bg-navy-blue"><i class="icofont-swoosh-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- Icon Box 6 -->
-
-                            <!-- Icon Box 6 -->
-                            <div class="col-12 col-md-6">
-                                <div class="icon-box-6">
-                                    <i class="icofont-delivery-time"></i>
-                                    <h3 class="h3-xs txt-blue">Delivery On Time</h3>
-                                    <p>Praesent pellentesque diam vitae nibh aliquam faucibus.</p>
-                                    <a href="#" class="btn-arrow bg-navy-blue"><i class="icofont-swoosh-right"></i></a>
-                                </div>
-                            </div>
-                            <!-- Icon Box 6 -->
-                        </div>
-
-                    </div>
-
+                   
                 </div>
 
             </div>
@@ -423,38 +248,7 @@
         <!-- Counter End -->
 
 
-        <!-- Intro Video Start -->
-        <section class="bg-sky-blue wide-tb-100 pb-5 why-choose">
-            <div class="container pos-rel">
-                <div class="contact-map-bg">
-                    <img src="/asset/images/map-bg.png" alt="">
-                </div>
-                <div class="row piecharts" id="pie-charts">
-                    <!-- Heading Main -->
-                    <div class="col-sm-12 wow fadeInDown" data-wow-duration="0" data-wow-delay="0s">
-                        <h1 class="heading-main">
-                            <span>Looking for more?</span>
-                            Watch Our Intro Video
-                        </h1>
-                    </div>
-                </div>
-        </section>
-        <section class="wide-tb-60 p-0 bg-sky-blue">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 wow pulse animated" data-wow-duration="0"
-                         data-wow-delay="0.7s">
-                        <div class="bg-fixed pos-rel video-popup">
-                            <div class="bg-overlay black opacity-50"></div>
-                            <div class="zindex-fixed pos-rel">
-                                <a href="#" class="play-video"><i class="icofont-play icofont-4x"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Intro Video End -->
+      
 
         <!-- Client Reviews Start -->
         <section class="wide-tb-100 mb-spacer-md">
@@ -549,7 +343,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-4 col-md-12 mb-0">
-                        <h4 class="h4-xl">Interested in working with Logzee?</h4>
+                        <h4 class="h4-xl">Interested in working with German Chemical?</h4>
                     </div>
                     <div class="col">
                         <div class="center-text">
@@ -558,7 +352,7 @@
                         </div>
                     </div>
                     <div class="col-sm-auto">
-                        <a href="#" class="btn-theme bg-white light">Get In Touch <i class="icofont-rounded-right"></i></a>
+                        <a href="/contact" class="btn-theme bg-white light">Get In Touch <i class="icofont-rounded-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -638,37 +432,37 @@
 
                             <!-- Client Logo -->
                             <div class="item">
-                                <img src="/asset/images/clients/client1.png" alt="">
+                            <p class="client-item-p pt-4 pb-4">Colormaster Ltd</p>
                             </div>
                             <!-- Client Logo -->
 
                             <!-- Client Logo -->
                             <div class="item">
-                                <img src="/asset/images/clients/client2.png" alt="">
+                            <p class="client-item-p pt-4 pb-4">Ring Shine Textile Ltd.</p>
                             </div>
                             <!-- Client Logo -->
 
                             <!-- Client Logo -->
                             <div class="item">
-                                <img src="/asset/images/clients/client3.png" alt="">
+                            <p class="client-item-p pt-4 pb-4">Viyellatex group</p>
                             </div>
                             <!-- Client Logo -->
 
                             <!-- Client Logo -->
                             <div class="item">
-                                <img src="/asset/images/clients/client4.png" alt="">
+                            <p class="client-item-p pt-4 pb-4">Jaya Knitting Ltd.</p>
                             </div>
                             <!-- Client Logo -->
 
                             <!-- Client Logo -->
                             <div class="item">
-                                <img src="/asset/images/clients/client5.png" alt="">
+                            <p class="client-item-p pt-4 pb-4">Lenny Fashions Ltd.</p>
                             </div>
                             <!-- Client Logo -->
 
                             <!-- Client Logo -->
                             <div class="item">
-                                <img src="/asset/images/clients/client6.png" alt="">
+                            <p class="client-item-p pt-3 pb-3">Rahamat Knit, Dyeing &amp; Finishing Ltd.</p>
                             </div>
                             <!-- Client Logo -->
 

@@ -99,8 +99,18 @@ class ApplicantTableController extends Controller
      * @param  \App\Applicant_table  $applicant_table
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Applicant_table $applicant_table)
+    public function destroy($id)
     {
-        //
+       //return $id;
+        try{   
+            Applicant_Table ::where('app_id',$id)->delete();
+            
+
+            return back()->with('success',"Successfylly deleted");
+        }catch(\Exception $exception){
+
+            return back()->with('failed',$exception->getMessage());
+      
+        }
     }
 }

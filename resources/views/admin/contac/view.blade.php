@@ -4,8 +4,9 @@
 <div class="card">
   <div class="card-header">
 
-   <h1 class="text-center text-primary">Applicant List</h1>
+   <h1 class="text-center text-primary">Contact List</h1>
   </div>
+
 
     <div class="card-body">
     
@@ -20,13 +21,10 @@
 <thead>
 <tr>
 <th>#</th>
-<th>Applicant name</th>
+<th>Contact name</th>
 <th> Email</th>
-<th>Max Qualification level</th>
 <th> phone</th>
-<th> Password</th>
-<th> Delete</th>
-
+<th> message</th>
 </tr>
 </thead>
 
@@ -34,14 +32,10 @@
 @foreach($result as $res)
 <tr>
 <td>{{$i++}}</td>
-<td>{{$res->app_name}} </td>
-<td>{{$res->app_email}} </td>
-<td>{{$res->app_max_edu}} </td>
-<td>{{$res->app_phone}}</td>
-<td>{{$res->app_password}}</td>
-<td><a class="btn btn-danger" href="/applicant/delete/{{$res->app_id}}">Delete</a></td>
-
-
+<td>{{$res->con_name}} </td>
+<td>{{$res->con_email}} </td>
+<td>{{$res->con_phone}}</td>
+<td>{{$res->con_msg}}</td>
 
 </tr>
 

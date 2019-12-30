@@ -14,26 +14,22 @@
 
             <form method="post" action="/slider/store" enctype='multipart/form-data'>
                 <div class="form-group">
-                    <label>Email:</label>
                     <input type="text" class="form-control" placeholder="Name" name="slider_name">
                     <input type="hidden" name="_token" value="{{{ csrf_token() }}}"/>
                 </div>
 
 
                 <div class="form-group">
-                    <label>Email:</label>
-                    <input type="text" class="form-control" placeholder="Name" name="slider_title">
+                    <input type="text" class="form-control" placeholder="Title" name="slider_title">
                 </div>
 
 
                 <div class="form-group">
-                    <label>Email:</label>
-                    <input type="text" class="form-control" placeholder="Name" name="slider_sub_title">
+                    <input type="text" class="form-control" placeholder="Sub Title" name="slider_sub_title">
                 </div>
 
                 <div class="form-group">
-                    <label>Email:</label>
-                    <input type="file" class="form-control" placeholder="Name" name="image">
+                    <input type="file" class="form-control" placeholder="Image" name="image">
                 </div>
 
                 <button type="submit" class="btn btn-primary">Submit</button>

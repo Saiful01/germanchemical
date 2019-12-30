@@ -107,9 +107,9 @@ class SliderController extends Controller
     public function update(Request $request, Slider $slider)
     {
 
-        if ($request->hasFile('image')) {
+        if ($request->hasFile('slider_image')) {
            
-            $image = $request->file('image');
+            $image = $request->file('slider_image');
             $image_name = time() . '.' . $image->getClientOriginalExtension();
             $destinationPath = public_path('/images/slider');
             $image->move($destinationPath, $image_name);

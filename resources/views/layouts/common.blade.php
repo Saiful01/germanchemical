@@ -96,7 +96,7 @@ Phone: 01717849968
         <div class="container text-nowrap bdr-nav px-0">
             <div class="d-flex mr-auto">
                 <a class="navbar-brand rounded-bottom light-bg" href="/">
-                    <img src="/asset/images/logo_footer.png" alt="">
+                    <img src="https://germanchemicalslimited.net/wp-content/themes/gcl/images/logo.png" alt="GERMAN CHEMICAL">
                 </a>
             </div>
 

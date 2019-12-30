@@ -22,7 +22,8 @@
 
                 <div class="form-group">
                     <label>Job Description:</label>
-                    <textarea type="text" class="form-control" placeholder="Description" name="job_description"></textarea>
+                    <textarea type="text" class="form-control" placeholder="Description" id="job_description" name="job_description" required
+                                      rows="30"></textarea>
                 </div>
 
 
@@ -63,6 +64,9 @@
 
         </div>
     </div>
+    <script>
+        CKEDITOR.replace( 'job_description' );
+    </script>
 
 
 @endsection

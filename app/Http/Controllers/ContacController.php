@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\JobApplicant;
+use App\Contac;
 use Illuminate\Http\Request;
 
-class JobApplicantController extends Controller
+class ContacController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -24,7 +24,7 @@ class JobApplicantController extends Controller
      */
     public function create()
     {
-        return view('admin.jonapplicant.create');
+        return view ('admin.contac.create');
     }
 
     /**
@@ -35,28 +35,35 @@ class JobApplicantController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        try{
+            Contac::create($request->all());
+
+           return back()->with('success',"Successfylly Saved");
+       }catch(\Exception $exception){
+
+           return back()->with('failed',$exception->getMessage());
+     
+       }
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\JobApplicant  $jobApplicant
+     * @param  \App\Contac  $contac
      * @return \Illuminate\Http\Response
      */
-    public function show(JobApplicant $jobApplicant)
+    public function show(Contac $contac)
     {
-         $result= JobApplicant::join('applicant_tables','applicant_tables.id','=','job_applicants.applicant_id')->get();
-        return view ('admin.jobapplicant.show',compact ('result'));
+        return view('admin.contac.view')->with('result',Contac::get());
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\JobApplicant  $jobApplicant
+     * @param  \App\Contac  $contac
      * @return \Illuminate\Http\Response
      */
-    public function edit(JobApplicant $jobApplicant)
+    public function edit(Contac $contac)
     {
         //
     }
@@ -65,10 +72,10 @@ class JobApplicantController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\JobApplicant  $jobApplicant
+     * @param  \App\Contac  $contac
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, JobApplicant $jobApplicant)
+    public function update(Request $request, Contac $contac)
     {
         //
     }
@@ -76,20 +83,11 @@ class JobApplicantController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\JobApplicant  $jobApplicant
+     * @param  \App\Contac  $contac
      * @return \Illuminate\Http\Response
      */
-    public function destroy( $id)
+    public function destroy(Contac $contac)
     {
-        try{   
-            JobApplicant ::where('id',$id)->delete();
-            
-
-            return back()->with('success',"Successfylly deleted");
-        }catch(\Exception $exception){
-
-            return back()->with('failed',$exception->getMessage());
-      
-        }
+        //
     }
 }

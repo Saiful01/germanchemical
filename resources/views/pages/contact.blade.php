@@ -74,11 +74,11 @@
                                 Get in touch
                             </h1>
 
-                            <form action="/email" method="post" id="contactusForm" novalidate="novalidate"
+                            <form action="/contac/store" method="post" enctype='multipart/form-data'
                                   class="col rounded-field">
                                 <div class="form-row mb-4">
                                     <div class="col">
-                                        <input type="text" name="name" id="name" class="form-control"
+                                        <input type="text" name="con_name"  class="form-control"
                                                placeholder="Your Name">
                                         <input type="hidden" name="_token" value="{{{ csrf_token() }}}"/>
                                     </div>
@@ -87,24 +87,24 @@
                                 <div class="form-row mb-4">
 
                                     <div class="col">
-                                        <input type="text" name="phone" id="phone" class="form-control"
+                                        <input type="text" name="con_phone"  class="form-control"
                                                placeholder="Phone">
                                     </div>
                                     <div class="col">
-                                        <input type="text" name="email" id="email" class="form-control"
+                                        <input type="email" name="con_email"  class="form-control"
                                                placeholder="Email">
                                     </div>
                                 </div>
 
                                 <div class="form-row mb-4">
                                     <div class="col">
-                                        <textarea rows="7" name="message" id="cment" placeholder="Message"
+                                        <textarea rows="7" name="con_msg" placeholder="Message"
                                                   class="form-control"></textarea>
                                     </div>
                                 </div>
                                 <div class="form-row text-center">
 
-                                    <button id="contactForm" type="submit"
+                                    <button  type="submit"
                                             class="form-btn mx-auto btn-theme bg-orange">Submit Now <i
                                                 class="icofont-rounded-right"></i></button>
                                 </div>

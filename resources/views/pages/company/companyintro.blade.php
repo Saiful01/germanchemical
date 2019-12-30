@@ -21,17 +21,68 @@
        
 
     <main id="body-content">
-        <div class="container">
-        <h1 class="text-center mb-5 mt-5">Our Story </h1>
-        <p>With great pleasure, I am writing to solicit for your assistance in a matter that can be of mutual benefit for us. I request you to go through it carefully and respond as promptly as possible.</p>
-        
-        <p>
-We, “German Chemicals Limited”, is a 100% export oriented textile chemicals manufacturer which is providing Textile Auxiliaries Chemicals in Bangladesh, Europe & other’s Asian market and GCL is situated inside Dhaka Export Processing Zone under Bangladesh Export Processing Zones Authority (BEPZA). We have started our journey in 2003 providing humble services to the customers and now after 8 years of successful operations, German Chemicals Ltd has become a reputed and dependable textile chemicals  manufacturer & Chemicals Exporter in Bangladesh. </p>
-        <p>To give a brief sketch of our company’s resume that GERMAN CHEMICALS LTD. is providing world-class GERMAN Textile Auxiliaries with this co-operation. Now German Chemicals Limited is operating its business with highly qualified Management and our intention is to grow a relationship with leading Manufacturers. German Chemicals Limited never compromise with its product quality and at the same time we are trying to make our Chemicals cost effective for our valuable customers. We are committed to supply different types of Textile Auxiliaries Chemical with better quality & minimum cost for Pretreatment, Dyeing, Finishing, Printing & Washing plant. </p>
-        <p>How we have operated so far:</p>
-        <p>We supply Textile Auxiliaries ranging from Pre-Treatment to Dyeing and Finishing as well as Printing  with the highest international eminence to Bangladeshi market in association with a Global-brand German chemicals manufacturer . We import raw chemicals form German Manufacturer and process those in our processing plant as per prescribed formula from the Parent manufacturer with maintaining the quality of the processed/ finished product exactly same as the Parent Manufacturer do. Needless to say that it allow us to use Parent Company’s respective Brand name and Reputation in the market. It should be noted that Parent Company has the liberty to check our product quality at our end or our supplied product from the Buyer’s end quality at any time. Generally they do it in every four to six months. Therefore we are unique than others to support customer’s various choices.Our expertise are highly experienced with international corporate backgrounds and proven service record. The team is highly professional, dynamic and ready to work round the clock to make you reluctant. </p>
+    <section class="about-section mt-5">
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-xl-6 col-lg-6">
+
+            <div class="about-col">
+
+                
+                    <h2><span>KNOW ABOUT GERMAN CHEMICALS LIMITED</span></h2>
+
+                    <h5>THE TRUSTED TEXTILE CHEMICAL</h5>
+
+                    <p class="para-space"></p><p class="para-space" style="text-align: justify;">Welcome to&nbsp;German Chemicals LTD. is one of the biggest 100% export oriented Textile Auxiliaries Chemicals industry located in Dhaka Export Processing Zone (DEPZ), Ganakbari Savar, Dhaka, Bangladesh, established in 2004 Under Bangladesh Export Processing Zone Authority (BEPZA).</p>
+<p class="para-space" style="text-align: justify;">This profile is envisages the establishment of a plant for the production of fabric softener in flakes and peril form with a capacity of 50 metric tons per day. The major use of fabric softener in textile and dyeing industry as finishing auxiliaries.</p>
+<p class="western" style="text-align: justify;">The country’s requirement of fabric softener is largely met through import. The present (2014) demand for fabric softener is estimated at more than 22,000 metric tons per month. The demand for the product is projected to reach 5,000 metric tons by the year of 2015.</p>
+<p>&nbsp;</p>
+<p class="western" align="justify">The principal raw material required are fatty acid distillate including other solid and essential acid can be obtain locally while the other raw materials have to be imported.</p>
+<p>&nbsp;</p>
+<p class="western" align="justify">The project cost is estimated as BDT 396.66 million. It will be financed with a debt to equity ratio of 33:67. Thus, equity requirement for the project is BDT 265.74 million. BDT 246.74 million out total equity has already been invested for land purchase, project design, feasibility report preparation and company formation. Total debt requirement of the projects is BDT 130.93 Million.</p>
+<p>&nbsp;</p>
+<p class="western" align="justify">The project can create employment for 59 persons. The establishment of such factory will have a foreign exchange earnings and saving effect to the country by substituting the current imports. The project also create backward linkage with the chemical manufacturing sub sector and also generates income for the government in terms of wage earning of a plant for the production of chemicals.</p>
+<p></p>
+
+                    
+            </div>
+
         </div>
 
+        <div class="col-xl-6 col-lg-6">
+
+            <div class="about-col about-img">
+
+                <br><br><br><br><br>
+
+                
+                        <img src="https://germanchemicalslimited.net/wp-content/uploads/2017/10/factory.jpg" class="img-responsive">
+
+                        
+                    <div class="about-info">
+
+                        <h4>TESTIMONIALS</h4>
+
+                        <p></p><p>“German Chemicals Limited have been able to service a broad range of research needs while always remaining flexible, cost effective, and most importantly lightning fast. They are a trusted partner for us. Keep up the good work!”</p>
+<p></p>
+
+                        <p class="pull-right"><strong>Richard</strong></p>
+
+                    </div>
+
+                    
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
 
         <!-- Contact Details Start -->
         <section class="wide-tb-80 contact-full-shadow">

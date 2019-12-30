@@ -22,18 +22,18 @@
 
                 <div class="form-group">
                     <label>Product Details:</label>
-                    <textarea type="text" class="form-control"  name="pro_details"></textarea>
+                    <textarea type="text" class="form-control" id="pro_details" placeholder="Details" name="pro_details"></textarea>
                 </div>
 
                 <div class="form-group">
                     <label>Product Image :</label>
                     <input type="file" class="form-control" name="pro_image">
                 </div>
-                
+<!--                 
                 <div class="form-group">
                     <label>Product Price:</label>
                     <input type="text" class="form-control" name="pro_price">
-                </div>
+                </div> -->
                 
                 
 
@@ -43,6 +43,9 @@
 
         </div>
     </div>
+    <script>
+        CKEDITOR.replace( 'pro_details' );
+    </script>
 
 
 @endsection

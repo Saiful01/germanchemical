@@ -58,5 +58,14 @@
         </div>
        
     </div>
+    <br>
+    
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+        <a href="/contac/view" class="btn btn-info btn-big btn-block">
+                Contact
+                
+            </a>
+        </div>
 </div>
 @endsection

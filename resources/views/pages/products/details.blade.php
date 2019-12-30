@@ -24,7 +24,7 @@
         <div class="card">
             <div class="card-body">
                 <img class="details-img" alt="Thumbnail [200x250]"
-                     src="/images/product/{{$result->pro_image}}" width="100%" height="300px">
+                     src="/images/product/{{$result->pro_image}}" width="50%" height="300px">
 
                 <hr>
 
@@ -33,7 +33,7 @@
                 <p>
                   Details:  {!!  $result->pro_details !!}
                 </p>
-                <p>Price: {{$result->pro_price}} tk</p>
+                <!-- <p>Price: {{$result->pro_price}} tk</p> -->
             </div>
 
         </div>
