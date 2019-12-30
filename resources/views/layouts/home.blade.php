@@ -86,8 +86,8 @@ Phone: 01717849968
                                     class="icofont-rounded-down"></i>
                         </a>
                         <div class="dropdown-menu dropdownhover-bottom dropdown-menu-right" role="menu">
-                            <a class="dropdown-item active" href="#">English</a>
-                            <a class="dropdown-item" href="#">Bangla</a>
+                            <a class="dropdown-item active" href="/eng/home">English</a>
+                            <a class="dropdown-item" href="/bangla/home">Bangla</a>
                         </div>
                     </div>
                 </div>

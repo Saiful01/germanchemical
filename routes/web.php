@@ -12,79 +12,13 @@
 */
 
 
-Route::get('/', function () {
-    $result = \App\Slider::get();
-    return view('welcome')->with('result',$result);
-});
-
-Route::get('/companyintro', function () {
-    return view('pages.company.companyintro');
-});
-Route::get('/MFChairman', function () {
-    return view('pages.company.MFChairman');
-});
-    
-Route::get('/prd', function () {
-    return view('pages.company.prd');
-});
-Route::get('/pr', function () {
-    return view('pages.company.pr');
-});
-Route::get('/contact', function () {
-    return view('pages.contact');
-});
-
-Route::get('/desired', function () {
-    return view('pages.career.desired');
-});
-Route::get('/hr', function () {
-    return view('pages.career.hr');
-});
-Route::get('/recruitment', function () {
-    return view('pages.career.recruitment');
-});
-Route::get('/information', function () {
-    return view('pages.career.information');
-});
-
-
-
-Route::get('/apply', 'Controller@apply');
-Route::get('/job/job-detail/{id}', 'Controller@jobDetail');
-Route::get('/job/job-apply/{id}', 'Controller@jobApply');
-Route::post('/applicant/job-apply', 'Controller@jobApplicantInsert');
-
-
-
-
-Route::get('/media', function () {
-    return view('pages.media');
-});
-Route::get('/products', function () {
-    $result = \App\product::get();
-    return view('pages.products.products')->with('result', $result);
-});
-Route::get('/webmails', function () {
-    return view('pages.webmails');
-});
-
-Auth::routes();
-
 //admin login strat
 Route::get('/admin/login', 'LoginController@login');
 Route::post('/admin/login/check', 'LoginController@loginCheck');
 
+//end admin login
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/admin/logout', 'LoginController@logout');
-
-
-//end admin login
-
-//Email
-Route::post('/email', 'Controller@email');
-
-
-
 
 //Admin Section slider
 Route::get('/slider/create', 'SliderController@create');
@@ -94,7 +28,6 @@ Route::get('/slider/edit/{id}', 'SliderController@edit');
 
 Route::post('/slider/update', 'SliderController@update');
 Route::get('/slider/delete/{id}', 'SliderController@destroy');
-
 
 
 //Admin Section job
@@ -108,14 +41,11 @@ Route::get('/job/delete/{id}', 'JobController@destroy');
 Route::get('/jobapplicant/show/{id}', 'JobController@applicant');
 
 
-
-
 //Admin section Apllicant table
 Route::get('/applicant/create', 'ApplicantTableController@create');
 Route::post('/applicant/store', 'ApplicantTableController@store');
 Route::get('/applicant/view', 'ApplicantTableController@show');
 Route::get('/applicant/delete/{id}', 'ApplicantTableController@destroy');
-
 
 
 //admin JobApplicant table
@@ -143,8 +73,78 @@ Route::get('/product/delete/{id}', 'ProductController@destroy');
 // admin section contac list
 Route::get('/contac/create', 'ContacController@create');
 Route::post('/contac/store', 'ContacController@store');
-Route::get('/contac/view', 'ContacController@show');
+Route::get('/contact/view', 'ContacController@show');
 Route::get('/contac/delete/{id}', 'ContacController@destroy');
+
+
+//Public
+
+Route::get('/', function () {
+    $result = \App\Slider::get();
+    return view('welcome')->with('result', $result);
+});
+
+Route::get('/companyintro', function () {
+    return view('pages.company.companyintro');
+});
+Route::get('/MFChairman', function () {
+    return view('pages.company.MFChairman');
+});
+
+Route::get('/prd', function () {
+    return view('pages.company.prd');
+});
+Route::get('/pr', function () {
+    return view('pages.company.pr');
+});
+Route::get('/contact', function () {
+    return view('pages.contact');
+});
+
+Route::get('/desired', function () {
+    return view('pages.career.desired');
+});
+Route::get('/hr', function () {
+    return view('pages.career.hr');
+});
+Route::get('/recruitment', function () {
+    return view('pages.career.recruitment');
+});
+Route::get('/information', function () {
+    return view('pages.career.information');
+});
+
+
+Route::get('/apply', 'Controller@apply');
+Route::get('/job/job-detail/{id}', 'Controller@jobDetail');
+Route::get('/job/job-apply/{id}', 'Controller@jobApply');
+Route::post('/applicant/job-apply', 'Controller@jobApplicantInsert');
+
+
+Route::get('/media', function () {
+    return view('pages.media');
+});
+Route::get('/products', function () {
+    $result = \App\product::get();
+    return view('pages.products.products')->with('result', $result);
+});
+Route::get('/webmails', function () {
+    return view('pages.webmails');
+});
+
+Auth::routes();
+
+
+//Email
+Route::post('/email', 'Controller@email');
+
+
+//For Bangla
+Route::group(['prefix' => 'bangla', 'as' => 'bangla.'], function () {
+
+    Route::get('/home', 'ControllerBangla@home');
+
+});
 
 
 
