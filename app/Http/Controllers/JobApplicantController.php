@@ -79,8 +79,17 @@ class JobApplicantController extends Controller
      * @param  \App\JobApplicant  $jobApplicant
      * @return \Illuminate\Http\Response
      */
-    public function destroy(JobApplicant $jobApplicant)
+    public function destroy( $id)
     {
-        //
+        try{   
+            JobApplicant ::where('id',$id)->delete();
+            
+
+            return back()->with('success',"Successfylly deleted");
+        }catch(\Exception $exception){
+
+            return back()->with('failed',$exception->getMessage());
+      
+        }
     }
 }

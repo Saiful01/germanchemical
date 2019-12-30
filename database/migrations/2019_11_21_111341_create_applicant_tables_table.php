@@ -14,7 +14,7 @@ class CreateApplicantTablesTable extends Migration
     public function up()
     {
         Schema::create('applicant_tables', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('app_id');
             $table->string('app_name');
             $table->string('app_email');
             $table->string('app_max_edu');

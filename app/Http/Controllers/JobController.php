@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\job;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
+use App\JobApplicant;
+use Illuminate\Support\Facades\DB;
+
 
 class JobController extends Controller
 {
@@ -12,9 +16,14 @@ class JobController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function __construct()
     {
-        //
+        $this->middleware(function ($request, $next) {
+            if (!Auth::check()) {
+                return Redirect::to('/admin/login');
+            }
+            return $next($request);
+        });
     }
 
     /**
@@ -122,8 +131,15 @@ class JobController extends Controller
      
        }
     }
-    public function applicant(){
-
+    public function applicant($id){
+    
+       
+         $result = DB::table('job_applicants')
+            ->where('job_id', $id)
+            ->leftjoin('applicant_tables', 'job_applicants.applicant_id', '=', 'applicant_tables.id')
+            ->get();
+        return view('admin.jobapplicant.show')->with('result', $result);
+   
 
 
     }
@@ -150,5 +166,6 @@ class JobController extends Controller
     
     }
     }
+   
    
 

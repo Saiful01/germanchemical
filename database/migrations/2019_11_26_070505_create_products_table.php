@@ -18,7 +18,7 @@ class CreateProductsTable extends Migration
             $table->string('pro_title');
             $table->text('pro_details');
             $table->string('pro_image')->nullable();
-            $table->string('pro_price');
+            $table->string('pro_price')->nullable();
             $table->timestamps();
         });
     }

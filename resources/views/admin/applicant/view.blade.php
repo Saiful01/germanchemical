@@ -1,8 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-<a class="btn btn-success float-right" href="/applicant/create">New</a><br>
 <div class="card">
+  <div class="card-header">
+
+   <h1 class="text-center text-primary">Applicant List</h1>
+  </div>
+
     <div class="card-body">
     
     @if(Session::has('success'))
@@ -12,24 +16,32 @@
 @if(Session::has('failed'))
 <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('failed') }}</p>
 @endif
-<table class="table table-borderd">
+<table class="table table-bordered">
 <thead>
 <tr>
+<th>#</th>
 <th>Applicant name</th>
 <th> Email</th>
 <th>Max Qualification level</th>
 <th> phone</th>
 <th> Password</th>
+<th> Delete</th>
+
 </tr>
 </thead>
 
+@php($i=1)
 @foreach($result as $res)
 <tr>
+<td>{{$i++}}</td>
 <td>{{$res->app_name}} </td>
 <td>{{$res->app_email}} </td>
 <td>{{$res->app_max_edu}} </td>
 <td>{{$res->app_phone}}</td>
 <td>{{$res->app_password}}</td>
+<td><a class="btn btn-danger" href="/applicant/delete/{{$res->app_id}}">Delete</a></td>
+
+
 
 </tr>
 

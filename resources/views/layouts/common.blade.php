@@ -34,7 +34,8 @@ Phone: 01717849968
     <link href="/asset/css/base.css" rel="stylesheet">
 
     <!-- REVOLUTION STYLE SHEETS -->
-    <link rel="stylesheet" type="text/css" href="/asset/rev-slider/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" type="text/css"
+          href="/asset/rev-slider/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
     <link rel="stylesheet" type="text/css" href="/asset/rev-slider/revolution/fonts/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="/asset/rev-slider/revolution/css/settings.css">
     <link rel="stylesheet" type="text/css" href="/asset/rev-slider/revolution/css/layers.css">
@@ -58,20 +59,21 @@ Phone: 01717849968
     </div>
 </div>
 <!-- Page loader End -->
-<header class="fixed-top header-fullpage top-border top-transparent wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+<header class="fixed-top header-fullpage top-border top-transparent wow fadeInDown"
+        style="visibility: visible; animation-name: fadeInDown;">
     <div class="top-bar-right d-flex align-items-center text-md-left">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col">
-            <i class="icofont-google-map"></i> House no 168, Road 23,DOHS,Mohakhali
-          </div>
-          <div class="col-md-auto">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    <i class="icofont-google-map"></i> House no 168, Road 23,DOHS,Mohakhali
+                </div>
+                <div class="col-md-auto">
 
-            <span class="mr-3"><i class="icofont-ui-touch-phone"></i> 008827790248</span>
+                    <span class="mr-3"><i class="icofont-ui-touch-phone"></i> 008827790248</span>
 
-            <span class="mr-3"><i class="icofont-ui-email"></i> Email Us</span>
-            <!-- Topbar Language Dropdown Start -->
-            <div class="dropdown d-inline-flex lang-toggle shadow-sm">
+                    <span class="mr-3"><i class="icofont-ui-email"></i> Email Us</span>
+                    <!-- Topbar Language Dropdown Start -->
+                    <div class="dropdown d-inline-flex lang-toggle shadow-sm">
                         <a href="#" class="dropdown-toggle btn" data-toggle="dropdown" aria-haspopup="true"
                            aria-expanded="false" data-hover="dropdown"
                            data-animations="slideInUp slideInUp slideInUp slideInUp">
@@ -81,22 +83,23 @@ Phone: 01717849968
                                     class="icofont-rounded-down"></i>
                         </a>
                         <div class="dropdown-menu dropdownhover-bottom dropdown-menu-right" role="menu">
-                            <a class="dropdown-item active" href="#">English</a>
-                            <a class="dropdown-item" href="#">Bangla</a>
+                            <a class="dropdown-item active" href="/eng/home">English</a>
+                            <a class="dropdown-item" href="/bangla/home">Bangla</a>
                         </div>
-                        </div>
-            <!-- Topbar Language Dropdown End -->          
-          </div>
+                    </div>
+                    <!-- Topbar Language Dropdown End -->
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-    
+
     <!-- Main Navigation Start -->
     <nav class="navbar navbar-expand-lg bg-transparent">
         <div class="container text-nowrap bdr-nav px-0">
             <div class="d-flex mr-auto">
                 <a class="navbar-brand rounded-bottom light-bg" href="/">
-                    <img src="/asset/images/logo_footer.png" alt="">
+                    <img src="https://germanchemicalslimited.net/wp-content/themes/gcl/images/logo.png"
+                         alt="GERMAN CHEMICAL">
                 </a>
             </div>
 
@@ -135,7 +138,7 @@ Phone: 01717849968
                         <a class="nav-link" href="/products">Products</a>
                     </li>
 
-                  
+
                     <li class="nav-item">
                         <a class="nav-link" href="/media">Media</a>
                     </li>
@@ -166,7 +169,7 @@ Phone: 01717849968
         </div>
     </nav>
     <!-- Main Navigation End -->
-  </header>
+</header>
 
 <
 
@@ -242,7 +245,6 @@ Phone: 01717849968
 
 <!-- JQuery Map Plugin -->
 <script type="text/javascript" src="/asset/js/jquery.gmap.min.js"></script>
-
 
 
 <script src="/asset/js/site-custom.js"></script>

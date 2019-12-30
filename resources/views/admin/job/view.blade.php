@@ -1,10 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-<a class="btn btn-success float-right" href="/job/create">New</a><br>
 <div class="card">
+<div class="card-header">
+
+   <h1 class="text-center text-primary">Job</h1>
+  </div>
 
     <div class="card-body">
+    <a class="btn btn-success float-right" href="/job/create">New</a><br>
     
     @if(Session::has('success'))
 <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('success') }}</p>
@@ -13,7 +17,7 @@
 @if(Session::has('failed'))
 <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('failed') }}</p>
 @endif
-<table class="table table-borderd">
+<table class="table table-bordered">
 <thead>
 <tr>
 <th>#</th>
@@ -56,7 +60,7 @@
         <a class="dropdown-item " href="/job/delete/{{$res->job_id}}" >
         Delete
         </a>
-        <a class="dropdown-item " href="/job/applicant/{{$res->job_id}}" >
+        <a class="dropdown-item " href="/jobapplicant/show/{{$res->job_id}}" >
         Applicant
         </a>
 

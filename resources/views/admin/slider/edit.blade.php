@@ -14,7 +14,7 @@
 
             <form method="post" action="/slider/update" enctype='multipart/form-data'>
                 <div class="form-group">
-                    <label>Email:</label>
+                    <label>Name:</label>
                     <input type="text" class="form-control" placeholder="Name" name="slider_name" value="{{$result->slider_name}}">
                     <input type="hidden" name="_token" value="{{{ csrf_token() }}}"/>
                     <input type="hidden" name="slider_id" value="{{$result->slider_id}}">
@@ -23,18 +23,18 @@
 
 
                 <div class="form-group">
-                    <label>Email:</label>
+                    <label>Title:</label>
                     <input type="text" class="form-control" placeholder="Name" name="slider_title"value="{{$result->slider_title}}">
                 </div>
 
 
                 <div class="form-group">
-                    <label>Email:</label>
+                    <label>Sub Title:</label>
                     <input type="text" class="form-control" placeholder="Name" name="slider_sub_title"value="{{$result->slider_sub_title}}">
                 </div>
 
                 <div class="form-group">
-                    <label>Email:</label>
+                    <label>Image:</label>
                     <input type="file" class="form-control" placeholder="Name" name="image"value="{{$result->image}}">
                 </div>
 

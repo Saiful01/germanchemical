@@ -1,13 +1,27 @@
 @extends('layouts.app')
 
 @section('content')
-<a class="btn btn-success float-right" href="/employee/create">New</a><br>
+<div class="card">
+  <div class="card-header">
 
+   <h1 class="text-center text-primary">Employee List</h1>
+  </div>
 
-        <div class="card">
-            <div class="card-body">
-                <table class="table table-borderd">
+    <div class="card-body">
+    <a class="btn btn-success float-right" href="/employee/create">New</a><br>
+
+    
+    @if(Session::has('success'))
+<p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('success') }}</p>
+@endif
+
+@if(Session::has('failed'))
+<p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('failed') }}</p>
+@endif
+                <table class="table table-bordered">
+                <thead>
                     <tr>
+                        <th>#</th>
                         <th>Employee name</th>
                         <th> Employee Email</th>
                         <th>Employee phone</th>
@@ -19,10 +33,13 @@
                         <th>Delete</th>
 
                     </tr>
+                    </thead>
 
 
-                    @foreach($result as $res)
-                    <tr>
+                    @php($i=1)
+                        @foreach($result as $res)
+                        <tr>
+                        <td>{{$i++}}</td>
                         <td>{{$res->emp_name}} </td>
                         <td>{{$res->emp_email}} </td>
                         <td>{{$res->emp_phone}}</td>
