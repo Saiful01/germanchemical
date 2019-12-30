@@ -14,9 +14,7 @@
         <h1 class="text-center" style="color:orange;">Apply For Job</h1>
 
 
-        <div class="breadcrumbs-description">
-            Molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto.
-        </div>
+        
 
 
 

@@ -16,9 +16,7 @@
             </nav>
 
             <h1>Webmails</h1>
-            <div class="breadcrumbs-description">
-                Molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto.
-            </div>
+            
        
 
     <main id="body-content">
