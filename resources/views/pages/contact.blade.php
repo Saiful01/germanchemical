@@ -16,7 +16,7 @@
             </nav>
 
             <h1>Contact Us</h1>
-            
+
         </div>
     </div>
 
@@ -27,38 +27,16 @@
         <section class="wide-tb-80 contact-full-shadow">
             <div class="container">
 
-                @if(Session::has('success'))
-                    <div class="alert alert-info" role="alert">
-                        {{ Session::get('success') }}
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                @endif
-
-                @if(Session::has('failed'))
-                    <div class="alert alert-danger" role="alert">
-                        {{ Session::get('failed') }}
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                @endif
-
-
-                <div class="contact-map-bg">
-                    <img src="images/map-bg.png" alt="">
-                </div>
                 <div class="row justify-content-between">
                     <div class="col-md-5 col-sm-12 col-lg-5 wow fadeInRight" data-wow-duration="0" data-wow-delay="0s"
                          style="visibility: visible; animation-delay: 0s; animation-name: fadeInRight;">
                         <div class="contact-detail-shadow">
-                            <h4>Dhaka</h4>
+                            <h4>German Chemical LTD.</h4>
                             <div class="d-flex align-items-start items">
                                 <i class="icofont-google-map"></i> <span>House no 168, Road 23,DOHS,Mohakhali</span>
                             </div>
                             <div class="d-flex align-items-start items">
-                                <i class="icofont-phone"></i> <span>+88</span>
+                                <i class="icofont-phone"></i> <span> 008827790248</span>
                             </div>
                             <div class="text-nowrap d-flex align-items-start items">
                                 <i class="icofont-email"></i> <a href="#">geremanchemicalltd.com</a>
@@ -67,17 +45,26 @@
                     </div>
                     <div class="col-md-7 col-sm-12 col-lg-7 wow fadeInLeft" data-wow-duration="0" data-wow-delay="0s"
                          style="visibility: visible; animation-delay: 0s; animation-name: fadeInLeft;">
+
+                        @if(Session::has('success'))
+                            <p class="alert {{ Session::get('alert-class', 'alert-success') }}">{{ Session::get('success') }}</p>
+                        @endif
+
+                        @if(Session::has('failed'))
+                            <p class="alert {{ Session::get('alert-class', 'alert-danger') }}">{{ Session::get('failed') }}</p>
+                        @endif
+
                         <div class="contact-detail-shadow">
                             <h1 class="heading-main mb-4">
                                 Get in touch
                             </h1>
 
-                            <form action="/contac/store" method="post" enctype='multipart/form-data'
+                            <form action="/message/store" method="post" enctype='multipart/form-data'
                                   class="col rounded-field">
                                 <div class="form-row mb-4">
                                     <div class="col">
-                                        <input type="text" name="con_name"  class="form-control"
-                                               placeholder="Your Name">
+                                        <input type="text" name="con_name" class="form-control"
+                                               placeholder="Your Name" required>
                                         <input type="hidden" name="_token" value="{{{ csrf_token() }}}"/>
                                     </div>
 
@@ -85,24 +72,24 @@
                                 <div class="form-row mb-4">
 
                                     <div class="col">
-                                        <input type="text" name="con_phone"  class="form-control"
-                                               placeholder="Phone">
+                                        <input type="text" name="con_phone" class="form-control"
+                                               placeholder="Phone" required>
                                     </div>
                                     <div class="col">
-                                        <input type="email" name="con_email"  class="form-control"
-                                               placeholder="Email">
+                                        <input type="email" name="con_email" class="form-control"
+                                               placeholder="Email" required>
                                     </div>
                                 </div>
 
                                 <div class="form-row mb-4">
                                     <div class="col">
                                         <textarea rows="7" name="con_msg" placeholder="Message"
-                                                  class="form-control"></textarea>
+                                                  class="form-control" required></textarea>
                                     </div>
                                 </div>
                                 <div class="form-row text-center">
 
-                                    <button  type="submit"
+                                    <button type="submit"
                                             class="form-btn mx-auto btn-theme bg-orange">Submit Now <i
                                                 class="icofont-rounded-right"></i></button>
                                 </div>

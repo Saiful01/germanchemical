@@ -18,5 +18,10 @@ class DatabaseSeeder extends Seeder
             'email' => "saiful013101@gmail.com",
             'password' => \Illuminate\Support\Facades\Hash::make('1234')
         ]);
+        \App\User::create([
+            'name' => "Motiur",
+            'email' => "memotiur@gmail.com",
+            'password' => \Illuminate\Support\Facades\Hash::make('123456')
+        ]);
     }
 }

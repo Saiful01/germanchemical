@@ -155,8 +155,9 @@
 
                                  data-fontsize="['14','14','14','14']"
                                  data-lineheight="['16','16','16','16']"
+                            >
 
-                            >Learn More <i class="icofont-rounded-right"></i></div>
+                            </div>
                         </li>
                 @endforeach
                 <!-- SLIDE  -->
@@ -282,63 +283,31 @@
                                             <img src="/asset/images/team_1.jpg" alt="">
                                         </div>
                                         <div class="client-inner-content media-body">
-                                            <p>Far far away, behind the word mountains, far from the countries Vokalia
-                                                and
-                                                Consonantia, there live the blind texts. Aliquam gravida, urna quis
-                                                ornare
-                                                imperdiet, </p>
-                                            <footer class="blockquote-footer"><cite title="Source Title">John Gerry
-                                                    Design
-                                                    Hunt</cite></footer>
+                                            <p>“German Chemicals Limited have been able to service a broad range of research needs while always remaining flexible, cost effective, and most importantly lightning fast. They are a trusted partner for us. Keep up the good work!”</p>
+                                            <footer class="blockquote-footer"><cite title="Source Title">Richard</cite></footer>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- Client Testimonials Slider Item -->
 
-                            <!-- Client Testimonials Slider Item -->
-                            <div class="item">
-                                <div class="client-testimonial bg-wave">
-                                    <div class="media">
-                                        <div class="client-testimonial-icon rounded-circle bg-navy-blue">
-                                            <img src="/asset/images/team_2.jpg" alt="">
-                                        </div>
-                                        <div class="client-inner-content media-body">
-                                            <p>Far far away, behind the word mountains, far from the countries Vokalia
-                                                and
-                                                Consonantia, there live the blind texts. Aliquam gravida, urna quis
-                                                ornare
-                                                imperdiet, </p>
-                                            <footer class="blockquote-footer"><cite title="Source Title">John Gerry
-                                                    Design
-                                                    Hunt</cite></footer>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Client Testimonials Slider Item -->
 
                             <!-- Client Testimonials Slider Item -->
                             <div class="item">
                                 <div class="client-testimonial bg-wave">
                                     <div class="media">
                                         <div class="client-testimonial-icon rounded-circle bg-navy-blue">
-                                            <img src="/asset/images/team_3.jpg" alt="">
+                                            <img src="/asset/images/team_1.jpg" alt="">
                                         </div>
                                         <div class="client-inner-content media-body">
-                                            <p>Far far away, behind the word mountains, far from the countries Vokalia
-                                                and
-                                                Consonantia, there live the blind texts. Aliquam gravida, urna quis
-                                                ornare
-                                                imperdiet, </p>
-                                            <footer class="blockquote-footer"><cite title="Source Title">John Gerry
-                                                    Design
-                                                    Hunt</cite></footer>
+                                            <p>“German Chemicals Limited have been able to service a broad range of research needs while always remaining flexible, cost effective, and most importantly lightning fast. They are a trusted partner for us. Keep up the good work!”</p>
+                                            <footer class="blockquote-footer"><cite title="Source Title">Richard</cite></footer>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- Client Testimonials Slider Item -->
+
 
                         </div>
                     </div>
@@ -369,7 +338,7 @@
         </section>
         <!-- Callout End -->
         <!-- Company News Start -->
-        <section class="wide-tb-100">
+      {{--  <section class="wide-tb-100">
             <div class="container">
                 <div class="row">
                     <!-- Heading Main -->
@@ -420,7 +389,7 @@
 
                 </div>
             </div>
-        </section>
+        </section>--}}
         <!-- Company News End -->
 
         <!-- Clients Start -->

@@ -87,6 +87,7 @@ Route::get('/MFChairman', 'ControllerEng@MFChairman');
 Route::get('/prd', 'ControllerEng@prd');
 Route::get('/pr', 'ControllerEng@pr');
 Route::get('/contact', 'ControllerEng@contact');
+Route::post('/message/store', 'ControllerEng@messageStore');
 Route::get('/desired', 'ControllerEng@desired');
 Route::get('/hr', 'ControllerEng@hr');
 Route::get('/recruitment', 'ControllerEng@recruitment');
@@ -101,7 +102,6 @@ Route::post('/applicant/job-apply', 'Controller@jobApplicantInsert');
 Route::get('/media', 'ControllerEng@media');
 Route::get('/products', 'ControllerEng@products');
 Route::get('/webmails', 'ControllerEng@webmails');
-
 
 
 Auth::routes();

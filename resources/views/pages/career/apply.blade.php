@@ -6,7 +6,7 @@
 
 @section('content')
 
-<div class="slider bg-navy-blue bg-scroll pos-rel breadcrumbs-page">
+    <div class="slider bg-navy-blue bg-scroll pos-rel breadcrumbs-page">
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -16,9 +16,8 @@
             </nav>
 
             <h1>Apply</h1>
-            
-        
-   
+        </div>
+    </div>
 
     <main id="body-content">
 
@@ -27,84 +26,29 @@
         <section class="wide-tb-80 contact-full-shadow">
             <div class="container">
 
-                @if(Session::has('success'))
-                    <div class="alert alert-info" role="alert">
-                        {{ Session::get('success') }}
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
+                <div class="row">
+                    <div class="col-md-8 mx-auto col-sm-8">
+
+                        @if(count($result)<=0)
+
+                            <h5>No Jobs Found</h5>
+                        @endif
+                        @foreach($result as $res)
+
+
+                            <a href="/job/job-detail/{{$res->job_id}}"
+                               class="btn-theme bg-orange mt-2">{{$res->job_title}} <i
+                                        class="icofont-rounded-right"></i></a>
+                            <br>
+
+                        @endforeach
                     </div>
-                @endif
-
-                @if(Session::has('failed'))
-                    <div class="alert alert-danger" role="alert">
-                        {{ Session::get('failed') }}
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                @endif
-
-              <div class="row">
-                <div class="col-md-8 col-sm-8">
-              <div class="theme-collapse capsules">
-
-
-
-
-              @foreach($result as $res)
-
-
-
-                <!-- Toggle Links 1 -->
-                <div class="toggle">
-                  <i class="icofont-rounded-down"></i> {{$res->job_title}}
 
                 </div>
-
-
-
-                <!-- Toggle Links 1 -->
-
-                <!-- Toggle Content 1 -->
-                <div class="collapse" style="">
-                  <div class="content">
-
-                  <div class="card p-3">
-                  {{$res->job_description}}
-
-<hr>
-
-                  <div class="col-md-4 col-sm-12 form-inline">
-             <a  class="btn btn-info"  style="color:#fff" href="/job/job-detail/{{$res->job_id}}">Details</a>
-              <a  class="btn btn-success"  style="color:#fff" href="/job/job-apply/{{$res->job_id}}">Apply</a><br><br>
-              </div>
-
-                  </div>
-                  </div>
-                </div>
-                <!-- Toggle Content 1 -->
-               
-@endforeach
-
-
-              </div>
-            </div>
-
-            
-
-              </div>
-
-
-
 
             </div>
         </section>
-
-
-
-
     </main>
- </div>
+
 
 @endsection

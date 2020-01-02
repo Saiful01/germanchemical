@@ -23,9 +23,8 @@ Phone: 01717849968
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no"/>
     <title>German Chemical LTD @yield('title')</title>
     <meta name="author" content="Mannat Studio">
-    <meta name="description" content="Logzee is a Responsive HTML5 Template for Logistic and Cargo related services.">
-    <meta name="keywords"
-          content="Logzee, responsive, html5, business, cargo, chain supply, company, corporate, expedition, freight, logistics, packaging, services, shipping, transport, transportation, trucking, warehousing">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
 
     <!-- xxx Favicon xxx -->
     <link rel="shortcut icon" type="image/x-icon" href="/asset/images/favicon.ico">
@@ -34,7 +33,8 @@ Phone: 01717849968
     <link href="/asset/css/base.css" rel="stylesheet">
 
     <!-- REVOLUTION STYLE SHEETS -->
-    <link rel="stylesheet" type="text/css" href="/asset/rev-slider/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" type="text/css"
+          href="/asset/rev-slider/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
     <link rel="stylesheet" type="text/css" href="/asset/rev-slider/revolution/fonts/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="/asset/rev-slider/revolution/css/settings.css">
     <link rel="stylesheet" type="text/css" href="/asset/rev-slider/revolution/css/layers.css">
@@ -42,8 +42,8 @@ Phone: 01717849968
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<!--    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
     <![endif]-->
 </head>
 <body>
@@ -70,7 +70,7 @@ Phone: 01717849968
                     </div>
                     <div class="top-text">
                         <small class="txt-sky-blue">Call</small>
-                         008827790248
+                        008827790248
                     </div>
                 </div>
                 <div class="col-md-auto">
@@ -99,8 +99,9 @@ Phone: 01717849968
     <nav class="navbar navbar-expand-lg bg-transparent">
         <div class="container text-nowrap bdr-nav px-0">
             <div class="d-flex mr-auto">
-                <a class="navbar-brand rounded-bottom light-bg text-white" href="/"> 
-                 <img src="https://germanchemicalslimited.net/wp-content/themes/gcl/images/logo.png" alt=" GERMAN CHEMICAl"> 
+                <a class="navbar-brand rounded-bottom light-bg text-white" href="/">
+                    <img src="https://germanchemicalslimited.net/wp-content/themes/gcl/images/logo.png"
+                         alt=" GERMAN CHEMICAl">
                 </a>
             </div>
 
@@ -135,12 +136,12 @@ Phone: 01717849968
                             <li><a class="dropdown-item" href="/pr">PR</a></li>
                         </ul>
                     </li>
-                    
+
                     <li class="nav-item">
                         <a class="nav-link" href="/products">Products</a>
                     </li>
 
-                    
+
                     <li class="nav-item">
                         <a class="nav-link" href="/media">Media</a>
                     </li>
@@ -174,8 +175,6 @@ Phone: 01717849968
 </header>
 
 
-
-
 @yield('content')
 
 
@@ -185,10 +184,11 @@ Phone: 01717849968
 
     <div class="copyright-wrap bg-navy-blue wide-tb-30">
         <div class="container">
-        
+
             <div class="row text-md-left text-center">
                 <div class="col-sm-12 col-md-6 copyright-links">
-                    <a href="#">Privacy Policy</a> <span>|</span> <a href="/contact">CONTACT</a> <span>|</span> <a href="#">FAQS</a>
+                    <a href="#">Privacy Policy</a> <span>|</span> <a href="/contact">CONTACT</a> <span>|</span> <a
+                            href="#">FAQS</a>
                 </div>
                 <div class="col-sm-12 col-md-6 text-md-right text-center">
                     Crafted by <a href="http://www.pixonlab.com" rel="nofollow">Pixon Lab</a> © 2019 All Rights Reserved
@@ -257,17 +257,22 @@ Phone: 01717849968
 <script type="text/javascript" src="/asset/rev-slider/revolution/js/jquery.themepunch.revolution.min.js"></script>
 
 <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-<script type="text/javascript" src="/asset/rev-slider/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-<script type="text/javascript" src="/asset/rev-slider/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-<script type="text/javascript" src="/asset/rev-slider/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript"
+        src="/asset/rev-slider/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script type="text/javascript"
+        src="/asset/rev-slider/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script type="text/javascript"
+        src="/asset/rev-slider/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
 <script type="text/javascript"
         src="/asset/rev-slider/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
 <script type="text/javascript"
         src="/asset/rev-slider/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-<script type="text/javascript" src="/asset/rev-slider/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript"
+        src="/asset/rev-slider/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
 <script type="text/javascript"
         src="/asset/rev-slider/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script type="text/javascript" src="/asset/rev-slider/revolution/js/extensions/revolution.extension.video.min.js"></script>
+<script type="text/javascript"
+        src="/asset/rev-slider/revolution/js/extensions/revolution.extension.video.min.js"></script>
 
 <!-- Masonary Plugin -->
 <script type="text/javascript" src="/asset/js/jquery.cubeportfolio.min.js"></script>

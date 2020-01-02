@@ -15,21 +15,21 @@
             <form method="post" action="/employee/store" enctype='multipart/form-data'>
                 <div class="form-group">
                     <label>Employee name:</label>
-                    <input type="text" class="form-control"  name="emp_name">
+                    <input type="text" class="form-control" name="emp_name">
                     <input type="hidden" name="_token" value="{{{ csrf_token() }}}"/>
                 </div>
 
 
                 <div class="form-group">
                     <label>Employee Email:</label>
-                    <input type="email" class="form-control"  name="emp_email">
+                    <input type="email" class="form-control" name="emp_email">
                 </div>
 
                 <div class="form-group">
                     <label>Employee Phone:</label>
                     <input type="number" class="form-control" name="emp_phone">
                 </div>
-                
+
                 <div class="form-group">
                     <label>Employee Bio:</label>
                     <input type="text" class="form-control" name="emp_bio">
@@ -46,8 +46,7 @@
                     <label>Employee Joining Date:</label>
                     <input type="text" class="form-control" name="emp_join_date">
                 </div>
-                
-                
+
 
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>

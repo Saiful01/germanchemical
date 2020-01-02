@@ -171,7 +171,6 @@ Phone: 01717849968
     <!-- Main Navigation End -->
 </header>
 
-<
 
 @yield('content')
 
