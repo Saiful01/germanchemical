@@ -36,14 +36,17 @@
                                 </a>
                                 <hr>
                                 <!-- <p class="text-success"><b>Price :</b> {{$res->pro_price}} tk</p> -->
-                                <p class="headline">
-                                    <a  href="/pages/products/details/{{$res->pro_id}}">{{$res->pro_title}}</a>
+                                <p class="headline text-center ">
+                                    <a class="text-info font-weight-bold"  href="/pages/products/details/{{$res->pro_id}}">{{$res->pro_title}}</a>
                                 </p>
 
 
                             </div>
                         </div>
+                        <br>
+
                     </div>
+
                 @endforeach
             </div>
         </div>
@@ -76,6 +79,7 @@
             </div>
         </section>
     </main> 
+ </div> 
  </div> 
 
 @endsection

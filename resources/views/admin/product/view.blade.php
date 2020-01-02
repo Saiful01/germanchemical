@@ -2,13 +2,19 @@
 
 @section('content')
 <div class="card">
-  <div class="card-header">
+<div class="card-header">
 
-   <h1 class="text-center text-primary">Product List</h1>
-  </div>
+<div class="row">
+    <div class="col-md-6">
+        <h4>Product</h4>
+    </div>
 
-    <div class="card-body">
-    <a class="btn btn-success float-right" href="/product/create">New</a><br>
+    <div class="col-md-6">
+        <a class="btn btn-success float-right" href="/product/create">New</a>
+    </div>
+</div>
+
+</div>
     @if(Session::has('success'))
 <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('success') }}</p>
 @endif

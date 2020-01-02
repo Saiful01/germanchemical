@@ -1,4 +1,4 @@
-@extends('layouts.home')
+@extends('layouts.home_bangla')
 
 @section('title','Home')
 
@@ -178,25 +178,15 @@
                     <div class="col-md-12 col-lg-12">
                         <p><img src="/asset/images/edit.png" alt="" class="mb-5"></p>
                         <p class="para-space"></p>
-                        <p style="text-align: justify;">Having started a venture 13 years ago, today I am privileged to
-                            be a founding member of one of the most competitive chemical company with emphasis on
-                            efficiency in operations, reliability for customers and trust on sustainable development.For
-                            us, sustainability means aligning economic success with environmental and social
-                            responsibility. In the last few years the German Chemicals Limited faced a series of
-                            prolonged crises. These crises allowed us to gain invaluable experience and guided us to
-                            newer avenues.</p>
-                        <p style="text-align: justify;">I would like to thank our employees, customers, suppliers and
-                            other stakeholders, for their dedication and support. We are committed to improving the
-                            efficiencies in our operations and differentiating ourselves in the market-place through
-                            customer focussed innovation in product and services, so as to build a stronger and
-                            sustainable future for our Company and our associates.</p>
+                        <p style="text-align: justify;">13 বছর আগে একটি উদ্যোগ শুরু করার পরে, আজ আমি এতে বিশেষ সুযোগ পেয়েছি জোর দিয়ে সবচেয়ে প্রতিযোগিতামূলক রাসায়নিক সংস্থার অন্যতম প্রতিষ্ঠাতা সদস্য হন ক্রিয়াকলাপে দক্ষতা, গ্রাহকদের জন্য নির্ভরযোগ্যতা এবং টেকসই উন্নয়নের উপর বিশ্বাস আমাদের, স্থায়িত্ব অর্থ পরিবেশগত এবং সামাজিক সঙ্গে অর্থনৈতিক সাফল্য সারিবদ্ধ দায়িত্ব। গত কয়েক বছরে জার্মান কেমিক্যালস লিমিটেড একটি সিরিজের মুখোমুখি হয়েছিল দীর্ঘায়িত সংকট এই সংকটগুলি আমাদের অমূল্য অভিজ্ঞতা অর্জনের অনুমতি দেয় এবং আমাদেরকে পরিচালিত করে আরও নতুন উপায়</p>
+                        <p style="text-align: justify;">আমি আমাদের কর্মচারী, গ্রাহক, সরবরাহকারী এবং  অন্যান্য অংশীদারদের, তাদের উত্সর্গ এবং সমর্থন জন্য। আমরা উন্নতি করতে প্রতিশ্রুতিবদ্ধ আমাদের ক্রিয়াকলাপের দক্ষতা এবং বাজারের জায়গায় নিজেদেরকে আলাদা করে তোলা গ্রাহক পণ্য এবং পরিষেবাদিতে উদ্ভাবনকে কেন্দ্র করে, যাতে আরও শক্তিশালী এবং আমাদের সংস্থা এবং আমাদের সহযোগীদের জন্য টেকসই ভবিষ্যত।</p>
                         <p>&nbsp;<br>
                             &nbsp;</p>
                         <div class="img-icon mt-4 d-flex align-items-center">
                             <img src="https://germanchemicalslimited.net/wp-content/uploads/2017/10/Badiul-Alam-Chairman.png">
                             <h3>
                                 MD B.Alam
-                                <span>Founder & Chairman</span>
+                                <span>প্রতিষ্ঠাতা ও চেয়ারম্যান</span>
                             </h3>
                         </div>
                     </div>

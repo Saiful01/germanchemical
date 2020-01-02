@@ -39,7 +39,7 @@
 <td>{{$res->app_max_edu}} </td>
 <td>{{$res->app_phone}}</td>
 <td>{{$res->app_password}}</td>
-<td><a class="btn btn-danger" href="/applicant/delete/{{$res->app_id}}">Delete</a></td>
+<td><a class="btn btn-danger" href="/applicant/delete/{{$res->id}}">Delete</a></td>
 
 
 

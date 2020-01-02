@@ -103,7 +103,7 @@ class ApplicantTableController extends Controller
     {
        //return $id;
         try{   
-            Applicant_Table ::where('app_id',$id)->delete();
+            Applicant_Table ::where('id',$id)->delete();
             
 
             return back()->with('success',"Successfylly deleted");

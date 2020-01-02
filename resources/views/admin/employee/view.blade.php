@@ -2,13 +2,19 @@
 
 @section('content')
 <div class="card">
-  <div class="card-header">
+<div class="card-header">
 
-   <h1 class="text-center text-primary">Employee List</h1>
-  </div>
+<div class="row">
+    <div class="col-md-6">
+        <h4>Employee</h4>
+    </div>
 
-    <div class="card-body">
-    <a class="btn btn-success float-right" href="/employee/create">New</a><br>
+    <div class="col-md-6">
+        <a class="btn btn-success float-right" href="/employee/create">New</a>
+    </div>
+</div>
+
+</div>
 
     
     @if(Session::has('success'))
@@ -23,12 +29,12 @@
                     <tr>
                         <th>#</th>
                         <th>Employee name</th>
-                        <th> Employee Email</th>
-                        <th>Employee phone</th>
-                        <th> Employee Bio</th>
-                        <th> Employee Image</th>
-                        <th> Employee Designation</th>
-                        <th> Employee Joining Date</th>
+                        <th>  Email</th>
+                        <th> phone</th>
+                        <th>  Bio</th>
+                        <th>  Image</th>
+                        <th>  Designation</th>
+                        <th>  Joining Date</th>
                         <th>Edit</th>
                         <th>Delete</th>
 

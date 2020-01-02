@@ -79,40 +79,18 @@ Route::get('/contac/delete/{id}', 'ContacController@destroy');
 
 //Public
 
-Route::get('/', function () {
-    $result = \App\Slider::get();
-    return view('welcome')->with('result', $result);
-});
+Route::get('/', 'ControllerEng@home');
+Route::get('/eng/home', 'ControllerEng@home');
 
-Route::get('/companyintro', function () {
-    return view('pages.company.companyintro');
-});
-Route::get('/MFChairman', function () {
-    return view('pages.company.MFChairman');
-});
-
-Route::get('/prd', function () {
-    return view('pages.company.prd');
-});
-Route::get('/pr', function () {
-    return view('pages.company.pr');
-});
-Route::get('/contact', function () {
-    return view('pages.contact');
-});
-
-Route::get('/desired', function () {
-    return view('pages.career.desired');
-});
-Route::get('/hr', function () {
-    return view('pages.career.hr');
-});
-Route::get('/recruitment', function () {
-    return view('pages.career.recruitment');
-});
-Route::get('/information', function () {
-    return view('pages.career.information');
-});
+Route::get('/companyintro', 'ControllerEng@companyintro');
+Route::get('/MFChairman', 'ControllerEng@MFChairman');
+Route::get('/prd', 'ControllerEng@prd');
+Route::get('/pr', 'ControllerEng@pr');
+Route::get('/contact', 'ControllerEng@contact');
+Route::get('/desired', 'ControllerEng@desired');
+Route::get('/hr', 'ControllerEng@hr');
+Route::get('/recruitment', 'ControllerEng@recruitment');
+Route::get('/information', 'ControllerEng@information');
 
 
 Route::get('/apply', 'Controller@apply');
@@ -120,17 +98,11 @@ Route::get('/job/job-detail/{id}', 'Controller@jobDetail');
 Route::get('/job/job-apply/{id}', 'Controller@jobApply');
 Route::post('/applicant/job-apply', 'Controller@jobApplicantInsert');
 
+Route::get('/media', 'ControllerEng@media');
+Route::get('/products', 'ControllerEng@products');
+Route::get('/webmails', 'ControllerEng@webmails');
 
-Route::get('/media', function () {
-    return view('pages.media');
-});
-Route::get('/products', function () {
-    $result = \App\product::get();
-    return view('pages.products.products')->with('result', $result);
-});
-Route::get('/webmails', function () {
-    return view('pages.webmails');
-});
+
 
 Auth::routes();
 
