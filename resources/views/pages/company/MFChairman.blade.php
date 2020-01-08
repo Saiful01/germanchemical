@@ -38,7 +38,7 @@
                         sustainability means aligning economic success with environmental and social responsibility. In
                         the last few years the German Chemicals Limited faced a series of prolonged crises. These crises
                         allowed us to gain invaluable experience and guided us to newer avenues.</p>
-                    <p>I would like to thank our employees, customers, suppliers and other
+                    <p>I would like to thank our employees,  customers, suppliers and other
                         stakeholders, for their dedication and support. We are committed to improving the efficiencies
                         in our operations and differentiating ourselves in the market-place through customer focussed
                         innovation in product and services, so as to build a stronger and sustainable future for our
